@@ -66,17 +66,12 @@ Variables may have attributes or elements you can access, too. You can use a dot
 ##Global Variables
 
 The following variables are always available in templates:
-* `chosen`
-  * `...` : Contains objects that are currently chosen. E.g. `menuitem`, `product`, `newsarticle` etc.
-* `application` 
-* `application.name`: The name of the site
-* `application.description`: The description of the site
-* `analytics`
-* `analytics.id`: The Google Analytics ID
-* `addthis`
-* `addthis.id`: The AddThis ID
-* `domain`
-  * `url`: Site domain name
+* `chosen`.`...` : Contains objects that are currently chosen. E.g. `menuitem`, `product`, `newsarticle` etc.
+* `application`.`name`: The name of the site
+* `application`.`description`: The description of the site
+* `analytics`.`id`: The Google Analytics ID
+* `addthis`.`id`: The AddThis ID
+* `domain`.`url`: Site domain name
 * `language`
   * `site`: The currently chosen site language
   * `ease`: The currently chosen Ease language
