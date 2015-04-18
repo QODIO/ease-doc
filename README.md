@@ -82,9 +82,9 @@ The following variables are always available in templates:
 * `ease`.`settings`.`products`.`locales`.`fo`: The string for faroese localization
 * `ease`.`settings`.`products`.`locales`.`da`: The string for danish localization
 * `ease`.`settings`.`products`.`locales`.`en`: The string for english localization
-* `ease`.`settings`.`currency_patterns`.`fo`: The currency patterns string for faroese localization
-* `ease`.`settings`.`currency_patterns`.`da`: The currency patterns string for danish localization
-* `ease`.`settings`.`currency_patterns`.`en`: The currency patterns string for english localization
+* `ease`.`settings`.`products`.`currency_patterns`.`fo`: The currency patterns string for faroese localization
+* `ease`.`settings`.`products`.`currency_patterns`.`da`: The currency patterns string for danish localization
+* `ease`.`settings`.`products`.`currency_patterns`.`en`: The currency patterns string for english localization
 * `ease`.`loggedin`: True if user is logged in
 * `ease`.`version`: The current version of Ease
 * `GET`: An array containing all the provided GET variables
