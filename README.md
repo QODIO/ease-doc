@@ -72,30 +72,21 @@ The following variables are always available in templates:
 * `analytics`.`id`: The Google Analytics ID
 * `addthis`.`id`: The AddThis ID
 * `domain`.`url`: Site domain name
-* `language`
-  * `site`: The currently chosen site language
-  * `ease`: The currently chosen Ease language
-  * `url`
-    * `...`: Contains the urls for language switching. E.g. `fo`, `da`, `en` etc.
-*`ease`
-  * `languages`: A numeric array containing all the available languages
-  * `pagemenus`
-    * `disabled`: True if page menus are disabled
-    * `settings`
-      * `filescollections`
-        * `allowed_filetypes`: A numeric array containing all the allowed filetypes for filescollections
-      * `products`
-        * `currency`: Currently chosen currency
-        * `locales`
-          * `fo`: The string for faroese localization
-          * `da`: The string for danish localization
-          * `en`: The string for english localization
-        * `currency_patterns`
-          * `fo`: The currency patterns string for faroese localization
-          * `da`: The currency patterns string for danish localization
-          * `en`: The currency patterns string for english localization
-    * `loggedin`: True if user is logged in
-    * `version`: The current version of Ease
+* `language`.`site`: The currently chosen site language
+* `language`.`ease`: The currently chosen Ease language
+* `language`.`url`.`...`: Contains the urls for language switching. E.g. `fo`, `da`, `en` etc.
+* `ease`.`languages`.`#`: A numeric array containing all the available languages
+* `ease`.`pagemenus`.`disabled`: True if page menus are disabled
+* `ease`.`settings`.`filescollections`.`allowed_filetypes`: A numeric array containing all the allowed filetypes for filescollections
+* `ease`.`settings`.`products`.`currency`: Currently chosen currency
+* `ease`.`settings`.`products`.`locales`.`fo`: The string for faroese localization
+* `ease`.`settings`.`products`.`locales`.`da`: The string for danish localization
+* `ease`.`settings`.`products`.`locales`.`en`: The string for english localization
+* `ease`.`settings`.`currency_patterns`.`fo`: The currency patterns string for faroese localization
+* `ease`.`settings`.`currency_patterns`.`da`: The currency patterns string for danish localization
+* `ease`.`settings`.`currency_patterns`.`en`: The currency patterns string for english localization
+* `ease`.`loggedin`: True if user is logged in
+* `ease`.`version`: The current version of Ease
 * `GET`: An array containing all the provided GET variables
 * `POST`: An array containing all the provided GET variables
 
