@@ -69,12 +69,12 @@ The following variables are always available in templates:
 * `chosen`
   * `...` : Contains objects that are currently chosen. E.g. `menuitem`, `product`, `newsarticle` etc.
 * `application` 
-  * `name`: The name of the site
-  * `description`: The description of the site
+* `application.name`: The name of the site
+* `application.description`: The description of the site
 * `analytics`
-  * `id`: The Google Analytics ID
+* `analytics.id`: The Google Analytics ID
 * `addthis`
-  * `id`: The AddThis ID
+* `addthis.id`: The AddThis ID
 * `domain`
   * `url`: Site domain name
 * `language`
