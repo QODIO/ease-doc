@@ -104,3 +104,54 @@ The following variables are always available in templates:
 * `GET`: An array containing all the provided GET variables
 * `POST`: An array containing all the provided GET variables
 
+
+##Setting Variables
+
+You can assign values to variables inside code blocks. Assignments use the set tag:
+
+```twig
+{% set foo = 'foo' %}
+{% set foo = [1, 2] %}
+{% set foo = {'foo': 'bar'} %}
+```
+
+##Filters
+
+Variables can be modified by filters. Filters are separated from the variable by a pipe symbol (|) and may have optional arguments in parentheses. Multiple filters can be chained. The output of one filter is applied to the next.
+
+The following example removes all HTML tags from the name and title-cases it:
+
+```twig
+{{ name|striptags|title }}
+```
+
+Filters that accept arguments have parentheses around the arguments. This example will join a list by commas:
+
+```twig
+{{ list|join(', ') }}
+```
+
+To apply a filter on a section of code, wrap it in the filter tag:
+
+```twig
+{% filter upper %}
+    This text becomes uppercase
+{% endfilter %}
+```
+
+Go to the [filters]() page to learn more about built-in filters.
+
+
+##Functions
+
+Functions can be called to generate content. Functions are called by their name followed by parentheses (()) and may have arguments.
+
+For instance, the range function returns a list containing an arithmetic progression of integers:
+
+```twig
+{% for i in range(0, 3) %}
+    {{ i }},
+{% endfor %}
+```
+
+Go to the [functions]() page to learn more about the built-in functions.
