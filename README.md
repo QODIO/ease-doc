@@ -141,3 +141,46 @@ For instance, the range function returns a list containing an arithmetic progres
 ```
 
 Go to the [functions]() page to learn more about the built-in functions.
+
+
+##Control Structure
+
+A control structure refers to all those things that control the flow of a program - conditionals (i.e. `if`/`elseif`/`else`), `for`-loops, as well as things like blocks. Control structures appear inside `{% ... %}` blocks.
+
+For example, to display a list of users provided in a variable called *users*, use the [for]() tag:
+
+```twig
+<h1>Members</h1>
+<ul>
+    {% for user in users %}
+        <li>{{ user.username|e }}</li>
+    {% endfor %}
+</ul>
+```
+
+The [if]() tag can be used to test an expression:
+
+```twig
+{% if users|length > 0 %}
+    <ul>
+        {% for user in users %}
+            <li>{{ user.username|e }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+```
+
+Go to the [tags]() page to learn more about the built-in tags.
+
+
+¤¤Comments
+
+To comment-out part of a line in a template, use the comment syntax `{# ... #}`. This is useful for debugging or to add information for other template designers or yourself:
+
+```twig
+{# note: disabled template because we no longer use this
+    {% for user in users %}
+        ...
+    {% endfor %}
+#}
+```
