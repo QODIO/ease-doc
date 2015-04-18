@@ -173,7 +173,7 @@ The [if]() tag can be used to test an expression:
 Go to the [tags]() page to learn more about the built-in tags.
 
 
-¤¤Comments
+##Comments
 
 To comment-out part of a line in a template, use the comment syntax `{# ... #}`. This is useful for debugging or to add information for other template designers or yourself:
 
