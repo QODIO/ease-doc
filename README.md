@@ -66,42 +66,41 @@ Variables may have attributes or elements you can access, too. You can use a dot
 ##Global Variables
 
 The following variables are always available in templates:
-chosen          | 
-    ...         | Contains objects that are currently chosen. E.g. `menuitem`, `product`, `newsarticle` etc.
-application     | 
-    name        | The name of the site
-    description | The description of the site
-analytics
-    id          | The Google Analytics ID
-addthis
-    id          | The AddThis ID
-domain
-    url         | Site domain name
-language
-    site        | The currently chosen site language
-    ease        | The currently chosen Ease language
-    url
-        ...     | Contains the urls for language switching. E.g. `fo`, `da`, `en` etc.
-        da      | => ?p=frontpage&l=da
-        en      | => ?p=frontpage&l=en
-ease
-    languages   | A numeric array containing all the available languages
-    pagemenus
-        disabled    | True if page menus are disabled
-        settings
-            filescollections
-                allowed_filetypes   | A numeric array containing all the allowed filetypes for filescollections
-                products
-                    currency        |  Currently chosen currency
-                    locales
-                        fo          | The string for faroese localization
-                        da          | The string for danish localization
-                        en          | The string for english localization
-                    currency_patterns
-                        fo          | The currency patterns string for faroese localization
-                        da          | The currency patterns string for danish localization
-                        en          | The currency patterns string for english localization
-        loggedin    | True if user is logged in
-        version     | The current version of Ease
-GET     | An array containing all the provided GET variables
-POST    | An array containing all the provided GET variables
+* `chosen`
+  * `...` : Contains objects that are currently chosen. E.g. `menuitem`, `product`, `newsarticle` etc.
+* `application` 
+  * `name`: The name of the site
+  * `description`: The description of the site
+* `analytics`
+  * `id`: The Google Analytics ID
+* `addthis`
+  * `id`: The AddThis ID
+* `domain`
+  * `url`: Site domain name
+* `language`
+  * `site`: The currently chosen site language
+  * `ease`: The currently chosen Ease language
+  * `url`
+    * `...`: Contains the urls for language switching. E.g. `fo`, `da`, `en` etc.
+*`ease`
+  * `languages`: A numeric array containing all the available languages
+  * `pagemenus`
+    * `disabled`: True if page menus are disabled
+    * `settings`
+      * `filescollections`
+        * `allowed_filetypes`: A numeric array containing all the allowed filetypes for filescollections
+      * `products`
+        * `currency`: Currently chosen currency
+        * `locales`
+          * `fo`: The string for faroese localization
+          * `da`: The string for danish localization
+          * `en`: The string for english localization
+        * `currency_patterns`
+          * `fo`: The currency patterns string for faroese localization
+          * `da`: The currency patterns string for danish localization
+          * `en`: The currency patterns string for english localization
+    * `loggedin`: True if user is logged in
+    * `version`: The current version of Ease
+* `GET`: An array containing all the provided GET variables
+* `POST`: An array containing all the provided GET variables
+
