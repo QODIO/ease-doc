@@ -10,8 +10,8 @@ Methods
 * [dump_template_vars](#dump_template_vars)
 * [dump_translate_vars](#dump_translate_vars)
 * [dump_vars](#dump_vars)
-* [displayMedia](#displayMedia)
-* [getQuery](#getQuery)
+* [displayMedia](#displaymedia)
+* [getQuery](#getquery)
 
 
 # Statements
