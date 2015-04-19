@@ -1,4 +1,4 @@
-#Ease Templates Coding Standards
+#Coding Standards<br>Ease Templates
 
 When writing Ease templates, we recommend you to follow these coding standards:
 
