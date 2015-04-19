@@ -11,12 +11,12 @@ Filters
 * [default](#default)
 * [dump](#dump)
 * [empty](#empty)
-* [escape (e)](#escape)
+* [escape (or e)](#escape)
 * [false](#false)
 * [first](#first)
 * [floor](#floor)
 * [format](#format)
-* [if (ifelse)](#if)
+* [if (or ifelse)](#if)
 * [isset](#isset)
 * [join](#join)
 * [json_encode](#json_encode)
@@ -37,8 +37,7 @@ Filters
 * [sort](#sort)
 * [split](#split)
 * [striptags](#striptags)
-* [substr](#substr)
-* [substring](#substring)
+* [substr (or substring)](#substr)
 * [title](#title)
 * [trim](#trim)
 * [true](#true)
@@ -505,10 +504,10 @@ The `print_r` filter prints human-readable information about a variable:
 
 ## replace
 
-The `replace` filter formats a given string by replacing the placeholders (placeholders are free-form):
+The `replace` filter formats a given string by replacing a string with another:
 
 ```twig
-{{ "I like %this% and %that%."|replace({'%this%': foo, '%that%': "bar"}) }}
+{{ "I like %this% and %that%."|replace('%this%', foo)|replace('%that%', "bar") }}
 
 {# outputs I like foo and bar
    if the foo parameter equals to the foo string. #}
@@ -517,71 +516,171 @@ The `replace` filter formats a given string by replacing the placeholders (place
 
 ## resize
 
-The `resize` filter
+The `resize` filter, resizes and caches and image. The image 
+
+These are the parameters the filter uses:
+
+* `width`: The width of the image, if no width or 0 is given, then it sets the width to auto
+* `height`: The height of the image, if no height or 0 is given, then it sets the height to auto
+* `fit`: Sets the fitting of the image: `inside`, `outside`, `stretch` or `crop` (you can also use `i`, `o`, `s` or `c`)
+⋅⋅⋅ This is *optional*, default is 'crop'
+* `fallback`: *Optional*: The fallback image to use, if no image is found
+⋅⋅⋅ This is *optional*
 
 ```twig
+{{ article.image|resize(200, 150, 'crop') }}
+{{ '/images/logo.png'|resize(200, 150, 'crop') }}
 ```
 
 
 ## reverse
 
-
+The `reverse` filter reverses a sequence, a mapping, or a string:
 
 ```twig
+{% for user in users|reverse %}
+    ...
+{% endfor %}
+
+{{ '1234'|reverse }}
+
+{# outputs 4321 #}
+```
+
+For sequences and mappings, numeric keys are not preserved. To reverse them as well, pass *true* as an argument to the `reverse` filter:
+
+```twig
+{% for key, value in {1: "a", 2: "b", 3: "c"}|reverse %}
+    {{ key }}: {{ value }}
+{%- endfor %}
+
+{# output: 0: c    1: b    2: a #}
+
+{% for key, value in {1: "a", 2: "b", 3: "c"}|reverse(true) %}
+    {{ key }}: {{ value }}
+{%- endfor %}
+
+{# output: 3: c    2: b    1: a #}
 ```
 
 
 ## round
 
-
+The `round` filter rounds a number to a given precision:
 
 ```twig
+{{ 42.55|round }}
+{# outputs 43 #}
+
+{{ 42.55|round(1, 'floor') }}
+{# outputs 42.5 #}
 ```
+The round filter takes two optional arguments; the first one specifies the precision (default is 0) and the second the rounding method (default is *common*):
+
+* `common` rounds either up or down (rounds the value up to precision decimal places away from zero, when it is half way there -- making 1.5 into 2 and -1.5 into -2);
+* `ceil` (or `up`) always rounds up;
+* `floor` (or `down`) always rounds down.
 
 
 ## slice
 
-
+The `slice` filter extracts a slice of a sequence, a mapping, or a string:
 
 ```twig
+{% for i in [1, 2, 3, 4, 5]|slice(1, 2) %}
+    {# will iterate over 2 and 3 #}
+{% endfor %}
+
+{{ '12345'|slice(1, 2) }}
+{# outputs 23 #}
+```
+
+You can use any valid expression for both the start and the length:
+
+```twig
+{% for i in [1, 2, 3, 4, 5]|slice(start, length) %}
+    {# ... #}
+{% endfor %}
+```
+
+If the start is non-negative, the sequence will start at that start in the variable. If start is negative, the sequence will start that far from the end of the variable.
+
+If length is given and is positive, then the sequence will have up to that many elements in it. If the variable is shorter than the length, then only the available variable elements will be present. If length is given and is negative then the sequence will stop that many elements from the end of the variable. If it is omitted, then the sequence will have everything from offset up until the end of the variable.
+
+You can also use a third parameter if you want to preserve keys of an array
+
+```twig
+{% for i in {1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five'}|slice(start, length) %}
+    {# will iterate over and return 0: 'two' and 1: 'three' #}
+{% endfor %}
+
+{% for i in {1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five'}|slice(start, length, true) %}
+    {# will iterate over and return 2: 'two' and 3: 'three' #}
+{% endfor %}
 ```
 
 
 ## sort
 
-
+The `sort` filter sorts an array:
 
 ```twig
+{% for user in users|sort %}
+    ...
+{% endfor %}
 ```
+
+#### arguments
+
+* `preserve_keys`: Whether to preserve key or not (default *true*)
+* `case_sensitive`: Sorting is case sensitive or not (default *false*)
+* `natural`: Sorting in natural or not (default *true*)
 
 
 ## split
 
-
+The `split` filter splits a string by the given delimiter and returns a list of strings:
 
 ```twig
+{% set foo = "one,two,three"|split(',') %}
+{# foo contains ['one', 'two', 'three'] #}
+```
+You can also pass a limit argument:
+
+* If limit is positive, the returned array will contain a maximum of limit elements with the last element containing the rest of string;
+* If limit is negative, all components except the last -limit are returned;
+* If limit is zero, then this is treated as 1.
+
+```twig
+{% set foo = "one,two,three,four,five"|split(',', 3) %}
+{# foo contains ['one', 'two', 'three,four,five'] #}
 ```
 
 
 ## striptags
 
-
+The `striptags` filter strips HTML and PHP tags from a string:
 
 ```twig
+{{ some_html|striptags }}
+```
+
+You can use the optional parameter to specify tags which should not be stripped.
+
+```twig
+{{ some_html|striptags('<br><a><img>') }}
+{% br, a and img tags will be preserved %}
 ```
 
 
-## substr
+## substr (or substring)
 
+The 'substr' or 'substring' filter returns part of a string
 
+#### Arguments
 
-```twig
-```
-
-
-## substring
-
-
+* `start`: Which number character to start from.
+* `length`: The number of characters to return. (Optinal)
 
 ```twig
 ```
@@ -589,17 +688,27 @@ The `resize` filter
 
 ## title
 
-
+The `title` filter returns a titlecased version of the value. Words will start with uppercase letters, all remaining characters are lowercase:
 
 ```twig
+{{ 'my first car'|title }}
+
+{# outputs 'My First Car' #}
 ```
 
 
 ## trim
 
-
+The `trim` filter strips whitespace (or other characters) from the beginning and end of a string:
 
 ```twig
+{{ '  I like Twig.  '|trim }}
+
+{# outputs 'I like Twig.' #}
+
+{{ '  I like Twig.'|trim('.') }}
+
+{# outputs '  I like Twig' #}
 ```
 
 
@@ -614,39 +723,56 @@ The `true` filter, returns first parameter if variable is *true*, and the second
 
 ## equals
 
-
+The equals filter, returns second parameter if variable equals first parameter, and the third parameter if it doesn't.
 
 ```twig
+{{ some_var|equals('john', 'it is john', 'it is not john') }}
 ```
 
 
 ## truncate
 
-
+The truncate filter truncates a string to given length
 
 ```twig
+{{ some_var|truncate(100) }}
+{{ some_var|truncate(100, '...') }}
 ```
 
 
 ## truncate_html
 
-
+The `truncate_html` filter truncates a html string to given length (length is characters, including html tags).
+> Consider using `truncate` filter together with `striptags` filter instead.
 
 ```twig
+{{ some_var|truncate_html(100) }}
+{{ some_var|truncate_html(100, '...') }}
 ```
 
 
 ## upper
 
-
+The `upper` filter converts a value to uppercase:
 
 ```twig
+{{ 'welcome'|upper }}
+
+{# outputs 'WELCOME' #}
 ```
 
 
 ## url_encode
 
-
+The `url_encode` filter encodes a given string as URL segment or an array as query string:
 
 ```twig
+{{ "path-seg*ment"|url_encode }}
+{# outputs "path-seg%2Ament" #}
+
+{{ "string with spaces"|url_encode }}
+{# outputs "string%20with%20spaces" #}
+
+{{ {'param': 'value', 'foo': 'bar'}|url_encode }}
+{# outputs "param=value&foo=bar" #}
 ```
