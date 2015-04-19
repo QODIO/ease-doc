@@ -1,16 +1,22 @@
-#Ease Templates Refernece - Statments
+# Ease Templates Refernece - Statments
 
-* [if  (elseif, else, endif)](#if)
-* [set](#set)
-* [for (endfor)](#for)
-* [include](#include)
-* [dump_vars](#dump_vars)
-* [dump_translate_vars](#dump_translate_vars)
+Core statements (methods)
 * [dump_template_vars](#dump_template_vars)
+* [dump_translate_vars](#dump_translate_vars)
+* [dump_vars](#dump_vars)
+* [for (endfor)](#for)
+* [if  (elseif, else, endif)](#if)
+* [include](#include)
+* [set](#set)
+
+Other statements (methods)
 * [displayMedia](#displayMedia)
 * [getQuery](#getQuery)
 
-##if
+
+## Core statements (methods)
+
+### if
 
 The `if` statement in Ease Templates is comparable with the *if* statements of PHP.
 
@@ -105,3 +111,5 @@ The assigned value can be any valid Twig expressions:
 {# foo is NOT available #}
 ```
 
+
+## Other statements (methods)
