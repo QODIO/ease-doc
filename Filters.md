@@ -181,41 +181,57 @@ The `date_old` filter functions much like `date` filter, but uses PHP's [date](h
 > The `date_old` filter does not support locales
 
 
-
-```twig
-```
-
-
 ## date_modify
 
-
+The `date_modify` filter modifies a date with a given modifier string:
 
 ```twig
+{{ post.published_at|date_modify("+1 day")|date("%m/%d/%Y") }}
 ```
+
+The `date_modify` filter accepts strings (it must be in a format supported by the [strtotime](http://www.php.net/strtotime) function). You can easily combine it with the `date` filter for formatting.
 
 
 ## default
 
-
+The default filter returns the passed default value if the value is undefined or empty, otherwise the value of the variable:
 
 ```twig
+{{ var|default('var is not defined') }}
+
+{{ var.foo|default('foo item on var is not defined') }}
+
+{{ var['foo']|default('foo item on var is not defined') }}
+
+{{ ''|default('passed var is empty')  }}
+```
+
+When using the default filter on an expression that uses variables in some method calls, be sure to use the default filter whenever a variable can be undefined:
+
+```twig
+{{ var.method(foo|default('foo'))|default('foo') }}
 ```
 
 
 ## dump
 
-
+The `dump` filter dumps information about a variable to the screen. It also has an optional parameter to disable escaping of html content.
 
 ```twig
+{{ some_var|dump }}
+{{ some_var|dump(false) }}
 ```
 
 
 ## empty
 
-
+The èmpty`filter checks if a variable is empty, and returns true of false:
 
 ```twig
+{{ some_var|empty|true('it is empty') }}
 ```
+
+> PHP's [empty](http://www.php.net/empty) is used internally
 
 
 ## escape (e)
@@ -268,10 +284,13 @@ The `date_old` filter functions much like `date` filter, but uses PHP's [date](h
 
 ## isset
 
-
+The `isset` filter checks if a variable is set, and returns true of false:
 
 ```twig
+{{ some_var|isset|true('it is not set') }}
 ```
+
+> PHP's [isset](http://www.php.net/isset) is used internally
 
 
 ## join
