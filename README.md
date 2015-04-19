@@ -184,3 +184,81 @@ To comment-out part of a line in a template, use the comment syntax `{# ... #}`.
     {% endfor %}
 #}
 ```
+
+##Including other Templates
+
+The include tag is useful to include a template and return the rendered content of that template into the current one:
+
+```twig
+{% include 'sidebar.html' %}
+```
+
+Per default included templates are passed the current context.
+
+The context that is passed to the included template includes variables defined in the template:
+
+```twig
+{% for box in boxes %}
+    {% include "render_box.ease" %}
+{% endfor %}
+```
+
+The included template render_box.html is able to access box.
+
+You can access templates in subdirectories with a slash:
+
+```twig
+{% include "sections/articles/sidebar.ease" %}
+```
+
+This behavior depends on the application embedding Ease Template.
+
+
+##HTML Escaping
+
+When generating HTML from templates, there's always a risk that a variable will include characters that affect the resulting HTML. Ease Template supports escaping of variables.
+
+###Working with Manual Escaping
+
+It is *your* responsibility to escape variables if needed. What to escape? Any variable you don't trust.
+
+Escaping works by piping the variable through the [`escape`]() or `e` filter:
+
+```twig
+{{ user.username|e }}
+```
+
+By default, the `escape` filter uses the *html* strategy, but depending on the escaping context, you might want to explicitly use any other available strategies:
+
+```twig
+{{ user.username|e('html') }}
+{{ user.username|e('url') }}
+```
+
+
+##Escaping
+
+It is sometimes desirable or even necessary to have Ease Template ignore parts it would otherwise handle as variables or blocks. For example if the default syntax is used and you want to use {{ as raw string in the template and not start a variable you have to use a trick.
+
+The easiest way is to output the variable delimiter ({{) by using a variable expression:
+
+```twig
+{{ '{{' }}
+```
+
+
+##Expressions
+Twig allows expressions everywhere. These work very similar to regular PHP and even if you're not working with PHP you should feel comfortable with it.
+
+```twig
+{% set greeting = 'Hello ' %}
+{% set name = 'Fabien' %}
+
+{{ greeting ~ name|lower }}   {# Hello fabien #}
+
+{# use parenthesis to change precedence #}
+{{ (greeting ~ name)|lower }} {# hello fabien #}
+```
+
+> The operator precedence is as follows, with the lowest-precedence operators listed first: b-and, b-xor, b-or, or, and, ==, > !=, <, >, >=, <=, in, matches, starts with, ends with, .., +, -, ~, *, /, //, %, is, **, |, [], and .:
+
