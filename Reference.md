@@ -189,7 +189,8 @@ This method is very useful for debugging purposes.
 
 The `getQuery` method is used to fetch the current querystring (*GET*), with an optional parameter; which contains a comma separated string of keys of querystring parameters that should not be included. This is useful for generating url strings.
 
-This example is useful for language urls, where you want to keep all the other quesrystring parameters.
+This example is useful for language urls, where you want to keep all the other querystring parameters.
+
 ```twig
 <a href="?{% getQuery('language') %}&language=en">EN</a>
 <a href="?{% getQuery('language') %}&language=da">DA</a>
