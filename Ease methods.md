@@ -14,9 +14,11 @@
 ### Module methods
 Adgroups
  * Ease_adgroup
+
 Calendars
  * Ease_calendar
  * Ease_calendaritem
+
 Menulists
  * Ease_menulist
  * Ease_newsgroup
