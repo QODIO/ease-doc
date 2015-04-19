@@ -1,6 +1,6 @@
 # Ease methods<br>Ease Templates Reference
 
-Core methods
+### Core methods
 * Ease_css
 * Ease_javascript
 * Ease_javascriptInline
@@ -11,7 +11,7 @@ Core methods
 * Ease_loginButton
 * Ease_content
 
-Module methods
+### Module methods
  * Ease_adgroup
  * Ease_calendar
  * Ease_calendaritem
