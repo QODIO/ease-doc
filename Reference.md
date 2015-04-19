@@ -1,39 +1,20 @@
 # Ease Templates Refernece - Statments
 
-Core statements (methods)
-* [dump_template_vars](#dump_template_vars)
-* [dump_translate_vars](#dump_translate_vars)
-* [dump_vars](#dump_vars)
+Statements
 * [for (endfor)](#for)
 * [if  (elseif, else, endif)](#if)
 * [include](#include)
 * [set](#set)
 
-Other statements (methods)
+Methods
+* [dump_template_vars](#dump_template_vars)
+* [dump_translate_vars](#dump_translate_vars)
+* [dump_vars](#dump_vars)
 * [displayMedia](#displayMedia)
 * [getQuery](#getQuery)
 
 
-# Core statements (methods)
-
-
-## dump_template_vars
-
-Display all the defined template variables and their content.
-This method is very useful for debugging purposes.
-
-
-## dump_translate_vars
-
-Display all the defined translate variables and their content.
-This method is very useful for debugging purposes.
-
-
-## dump_vars
-
-Display all the defined variables and their content.
-This method is very useful for debugging purposes.
-
+# Statements
 
 ## for
 
@@ -170,4 +151,47 @@ The assigned value can be any valid Ease Template expressions:
 ```
 
 
-# Other statements (methods)
+# Methods
+
+## displayMedia
+
+The `displayMedia` method is used to display images, video, flash. The method takes 4 parameters.
+
+* filepage: The path to the media file you want to display
+* width: The width of the media element
+* height: The height of the media element
+* class: An optional paramenter, defining a class to be added to the media element
+
+```twig
+{% displayMedia('/images/logo.png', 300, 200, 'logo_image') %}
+```
+
+
+## dump_template_vars
+
+Display all the defined template variables and their content.
+This method is very useful for debugging purposes.
+
+
+## dump_translate_vars
+
+Display all the defined translate variables and their content.
+This method is very useful for debugging purposes.
+
+
+## dump_vars
+
+Display all the defined variables and their content.
+This method is very useful for debugging purposes.
+
+
+## getQuery
+
+The `getQuery` method is used to fetch the current querystring (*GET*), with an optional parameter; which contains a comma separated string of keys of querystring parameters that should not be included. This is useful for generating url strings.
+
+This example is useful for language urls, where you want to keep all the other quesrystring parameters.
+```twig
+<a href="?{% getQuery('language') %}&language=en">EN</a>
+<a href="?{% getQuery('language') %}&language=da">DA</a>
+```
+
