@@ -218,7 +218,7 @@ This behavior depends on the application embedding Ease Template.
 
 When generating HTML from templates, there's always a risk that a variable will include characters that affect the resulting HTML. Ease Template supports escaping of variables.
 
-###Working with Manual Escaping
+####Working with Manual Escaping
 
 It is *your* responsibility to escape variables if needed. What to escape? Any variable you don't trust.
 
@@ -248,17 +248,67 @@ The easiest way is to output the variable delimiter ({{) by using a variable exp
 
 
 ##Expressions
-Twig allows expressions everywhere. These work very similar to regular PHP and even if you're not working with PHP you should feel comfortable with it.
+Ease Template allows expressions everywhere. These work very similar to regular PHP and even if you're not working with PHP you should feel comfortable with it.
 
 ```twig
 {% set greeting = 'Hello ' %}
 {% set name = 'Fabien' %}
 
-{{ greeting ~ name|lower }}   {# Hello fabien #}
+{{ greeting ~ name|lower }}   {# Hello fabien #} // NOT SUPPORTED YET
 
 {# use parenthesis to change precedence #}
-{{ (greeting ~ name)|lower }} {# hello fabien #}
+{{ (greeting ~ name)|lower }} {# hello fabien #} // NOT SUPPORTED YET
 ```
 
 > The operator precedence is as follows, with the lowest-precedence operators listed first: b-and, b-xor, b-or, or, and, ==, > !=, <, >, >=, <=, in, matches, starts with, ends with, .., +, -, ~, *, /, //, %, is, **, |, [], and .:
 
+
+####Literals
+
+The simplest form of expressions are literals. Literals are representations for PHP types such as strings, numbers, and arrays. The following literals exist:
+
+* "Hello World": Everything between two double or single quotes is a string. They are useful whenever you need a string in the template (for example as arguments to function calls, filters or just to extend or include a template). A string can contain a delimiter if it is preceded by a backslash (\) -- like in 'It\'s good'.
+
+* ["foo", "bar"]: Arrays are defined by a sequence of expressions separated by a comma (,) and wrapped with squared brackets ([]).
+
+* {"foo": "bar"}: Hashes are defined by a list of keys and values separated by a comma (,) and wrapped with curly braces ({}):
+
+```twig
+{# keys as string #}
+{ 'foo': 'foo', 'bar': 'bar' }
+
+{# keys as names (equivalent to the previous hash) #}
+{ foo: 'foo', bar: 'bar' }
+
+{# keys as integer #}
+{ 2: 'foo', 4: 'bar' }
+```
+
+* true / false: true represents the true value, false represents the false value.
+
+* null: null represents no specific value. This is the value returned when a variable does not exist.
+
+Arrays and hashes can be nested:
+
+```twig
+{% set foo = [1, {"foo": "bar"}] %}
+```
+
+> Using double-quoted or single-quoted strings has no impact on performance but string interpolation is only supported in double-quoted strings.
+
+
+####Other Operators
+
+The following operators are very useful but don't fit into any of the other categories:
+
+* `|`: Applies a filter.
+
+* `~`: **NOT SUPPORTED YET** Converts all operands into strings and concatenates them. {{ "Hello " ~ name ~ "!" }} would return (assuming name is 'John') Hello John!.
+
+* `?` `:`: **NOT SUPPORTED YET** The ternary operator:
+
+```twig
+{{ foo ? 'yes' : 'no' }} // NOT SUPPORTED YET
+{{ foo ?: 'no' }} is the same as {{ foo ? foo : 'no' }} // NOT SUPPORTED YET
+{{ foo ? 'yes' }} is the same as {{ foo ? 'yes' : '' }} // NOT SUPPORTED YET
+```
