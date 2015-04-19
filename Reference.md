@@ -14,9 +14,54 @@ Other statements (methods)
 * [getQuery](#getQuery)
 
 
-## Core statements (methods)
+# Core statements (methods)
 
-### if
+
+## dump_template_vars
+
+Display all the defined template variables and their content.
+This method is very useful for debugging purposes.
+
+
+## dump_translate_vars
+
+Display all the defined translate variables and their content.
+This method is very useful for debugging purposes.
+
+
+## dump_vars
+
+Display all the defined variables and their content.
+This method is very useful for debugging purposes.
+
+
+## for
+
+Loop over each item in a sequence. For example, to display a list of users provided in a variable called *users*:
+
+```twig
+<h1>Members</h1>
+<ul>
+    {% for user in users %}
+        <li>{{ user.username|e }}</li>
+    {% endfor %}
+</ul>
+```
+
+> A sequence can be either an array or an object.
+
+If you do need to iterate over a sequence of numbers, you can use the [] operators:
+
+```twig
+{% for i in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] %}
+    * {{ i }}
+{% endfor %}
+```
+
+The above snippet of code would print all numbers from 0 to 10.
+
+
+## if
 
 The `if` statement in Ease Templates is comparable with the *if* statements of PHP.
 
@@ -76,24 +121,37 @@ non-empty array | true
 object | true
 
 
+## include
+
+The `include` statement includes a template and returns the rendered content of that file into the current namespace:
+
+```twig
+{% include 'header.ease' %}
+    Body
+{% include 'footer.ease' %}
+```
+
+Included templates have access to the variables of the active context.
+
+
 ## set
 
-Inside code blocks you can also assign values to variables. Assignments use the set tag and can have multiple targets.
+Inside code blocks you can also assign values to variables. Assignments use the `set` tag.
 
-Here is how you can assign the bar value to the foo variable:
+Here is how you can assign the *bar* value to the *foo* variable:
 
 ```twig
 {% set foo = 'bar' %}
 ```
 
-After the set call, the foo variable is available in the template like any other ones:
+After the set call, the *foo* variable is available in the template like any other ones:
 
 ```twig
 {# displays bar #}
 {{ foo }}
 ```
 
-The assigned value can be any valid Twig expressions:
+The assigned value can be any valid Ease Template expressions:
 
 ```twig
 {% set foo = [1, 2] %}
@@ -101,7 +159,7 @@ The assigned value can be any valid Twig expressions:
 {% set foo = 'foo' ~ 'bar' %}
 ```
 
-> Note that loops are scoped in Twig; therefore a variable declared inside a for loop is not accessible outside the loop itself:
+> Note that loops are, for security reasons, scoped in Ease Template; therefore a variable declared inside a for loop is not accessible outside the loop itself:
 
 ```twig
 {% for item in list %}
@@ -112,4 +170,4 @@ The assigned value can be any valid Twig expressions:
 ```
 
 
-## Other statements (methods)
+# Other statements (methods)
