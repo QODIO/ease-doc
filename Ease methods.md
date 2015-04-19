@@ -21,12 +21,19 @@ Calendars
 
 Menulists
  * Ease_menulist
+
+Newsgroups
  * Ease_newsgroup
  * Ease_newsarticle
+
+Products
  * Ease_products_filtergroup
  * Ease_products_activeFilters
  * Ease_products
  * Ease_product
- * Ease_simpleitem
- * Ease_slideshow
 
+Simpleitems
+ * Ease_simpleitem
+
+Slideshows
+ * Ease_slideshow
