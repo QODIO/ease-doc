@@ -33,19 +33,18 @@ When writing Ease templates, we recommend you to follow these coding standards:
 {{ "foo" }}
 ```
 
-* Do not put any spaces before and after the following operators: |, ., .., []:
+* Do not put any spaces before and after the following operators: `|`, `.`, `[]`:
 
 ```twig
 {{ foo|upper|lower }}
 {{ user.name }}
 {{ user[name] }}
-{% for i in 1..12 %}{% endfor %}
+{% for i in [1, 2, 3, 4] %}{% endfor %}
 ```
 
 * Do not put any spaces before and after the parenthesis used for filter and function calls:
 ```twig
 {{ foo|default('foo') }}
-{{ range(1..10) }}
 ```
 
 * Do not put any spaces before and after the opening and the closing of arrays and hashes:
@@ -62,9 +61,7 @@ When writing Ease templates, we recommend you to follow these coding standards:
 
 * Indent your code inside tags (use the same indentation as the one used for the target language of the rendered template):
 ```twig
-{% block foo %}
-   {% if true %}
-       true
-   {% endif %}
-{% endblock %}
+{% if true %}
+    true
+{% endif %}
 ```
