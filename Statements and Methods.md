@@ -1,4 +1,4 @@
-# Statements and Methods - Ease Templates Reference
+# Statements and Methods<br>Ease Templates Reference
 
 Statements
 * [for (endfor)](#for)
