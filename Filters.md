@@ -81,6 +81,7 @@ The `ceil` filter rounds a number up to the next highest integer value:
 
 ```twig
 {{ 10.64|ceil }}
+{# returns 11 #}
 ```
 
 
@@ -225,7 +226,7 @@ The `dump` filter dumps information about a variable to the screen. It also has 
 
 ## empty
 
-The èmpty`filter checks if a variable is empty, and returns true of false:
+The `empty` filter checks if a variable is empty, and returns true of false:
 
 ```twig
 {{ some_var|empty|true('it is empty') }}
@@ -236,50 +237,101 @@ The èmpty`filter checks if a variable is empty, and returns true of false:
 
 ## escape (e)
 
+The `escape` filter escapes a string for safe insertion into the final output. It supports different escaping strategies depending on the template context.
 
+By default, it uses the HTML escaping strategy:
 
 ```twig
+{{ user.username|escape }}
 ```
+
+For convenience, the `e` filter is defined as an alias:
+
+```twig
+{{ user.username|e }}
+```
+
+The `escape` filter can also be used in other contexts than HTML thanks to an optional argument which defines the escaping strategy to use:
+
+```twig
+{{ user.username|e }}
+{# is equivalent to #}
+{{ user.username|e('html') }}
+```
+
+And here is how to escape variables included in JavaScript code (NOT SUPPORTED YET):
+
+```twig
+{{ user.username|escape('js') }}
+{{ user.username|e('js') }}
+```
+
+The escape filter supports the following escaping strategies:
+
+* `html`: escapes a string for the *HTML body* context.
+* `js`: NOT SUPPORTED YET: escapes a string for the *JavaScript context*.
+* `url`: escapes a string for the *URI or parameter contexts*. This should not be used to escape an entire URI; only a subcomponent being inserted.
+* `html_attr`: escapes a string for the *HTML attribute* context (NOT SUPPORTED YET).
 
 
 ## false
 
-
+The `false` filter, returns first parameter if variable is *false*, and the second parameter if *true*
 
 ```twig
+{{ some_var|false('yup, it is false', 'nope, it is not false') }}
 ```
 
 
 ## first
 
-
+The `first` filter returns the first "element" of a sequence, a mapping, or a string:
 
 ```twig
+{{ [1, 2, 3, 4]|first }}
+{# outputs 1 #}
+
+{{ { a: 1, b: 2, c: 3, d: 4 }|first }}
+{# outputs 1 #}
+
+{{ '1234'|first }}
+{# outputs 1 #}
 ```
 
 
 ## floor
 
-
+The `floor` filter rounds a number down to the next lowest integer value:
 
 ```twig
+{{ 10.64|floor }}
+{# returns 10 #}
 ```
 
 
 ## format
 
+The `format` filter formats a given string by replacing the placeholders (placeholders follows the [sprintf](http://www.php.net/sprintf) notation):
 
 
 ```twig
+{{ "I like %s and %s."|format(foo, "bar") }}
+
+{# outputs: "I like foo and bar"
+   if the foo parameter contains the "foo" string. #}
 ```
 
 
 ## if (ifelse)
 
-
+The `if` filter, returns first parameter if variable is *true*, and the second parameter if *false*
 
 ```twig
+{{ some_var|if('true', 'false') }}
+{{ some_var|ifelse('true', 'false') }}
 ```
+
+> The `if` filter works differently from the `true` and `false` filters internally, by using PHP's shorthand comparison statement.
 
 
 ## isset
@@ -295,82 +347,151 @@ The `isset` filter checks if a variable is set, and returns true of false:
 
 ## join
 
-
+The `join` filter returns a string which is the concatenation of the items of a sequence:
 
 ```twig
+{{ [1, 2, 3]|join }}
+{# returns 123 #}
+```
+
+The separator between elements is an empty string per default, but you can define it with the optional first parameter:
+
+```twig
+{{ [1, 2, 3]|join('|') }}
+{# outputs 1|2|3 #}
 ```
 
 
 ## json_encode
 
-
+The `json_encode` filter returns the JSON representation of a value:
 
 ```twig
+{{ data|json_encode() }}
 ```
 
 
 ## keys
 
-
+The `keys` filter returns the keys of an array. It is useful when you want to iterate over the keys of an array:
 
 ```twig
+{% for key in array|keys %}
+    ...
+{% endfor %}
 ```
 
 
 ## last
 
-
+The `last` filter returns the last "element" of a sequence, a mapping, or a string:
 
 ```twig
+{{ [1, 2, 3, 4]|last }}
+{# outputs 4 #}
+
+{{ { a: 1, b: 2, c: 3, d: 4 }|last }}
+{# outputs 4 #}
+
+{{ '1234'|last }}
+{# outputs 4 #}
 ```
 
 
 ## length
 
-
+The `length` filter returns the number of items of a sequence or mapping, or the length of a string:
 
 ```twig
+{% if users|length > 10 %}
+    ...
+{% endif %}
 ```
 
 
 ## lower
 
-
+The `lower` filter converts a value to lowercase:
 
 ```twig
+{{ 'WELCOME'|lower }}
+
+{# outputs 'welcome' #}
 ```
 
 
 ## merge
 
-
+The `merge` filter merges an array with another array:
 
 ```twig
+{% set values = [1, 2] %}
+
+{% set values = values|merge(['apple', 'orange']) %}
+
+{# values now contains [1, 2, 'apple', 'orange'] #}
 ```
+
+New values are added at the end of the existing ones.
+
+The `merge` filter also works on hashes:
+
+```twig
+{% set items = { 'apple': 'fruit', 'orange': 'fruit', 'peugeot': 'unknown' } %}
+
+{% set items = items|merge({ 'peugeot': 'car', 'renault': 'car' }) %}
+
+{# items now contains { 'apple': 'fruit', 'orange': 'fruit', 'peugeot': 'car', 'renault': 'car' } #}
+```
+
+For hashes, the merging process occurs on the keys: if the key does not already exist, it is added but if the key already exists, its value is overridden.
 
 
 ## nl2br
 
-
+The `nl2br` filter inserts HTML line breaks before all newlines in a string:
 
 ```twig
+{{ "I like Twig.\nYou will like it too."|nl2br }}
+{# outputs
+
+    I like Twig.<br />
+    You will like it too.
+
+#}
 ```
 
 
 ## not_empty
 
-
+The `not_empty` filter checks if a variable is NOT empty, and returns true of false:
 
 ```twig
+{{ some_var|not_empty|true('it is NOT empty') }}
 ```
+
+> PHP's [empty](http://www.php.net/empty) is used internally
 
 
 ## number_format
 
-
+The `number_format` filter formats numbers. It is a wrapper around PHP's [number_format](http://php.net/number_format) function:
 
 ```twig
+{{ 200.35|number_format }}
 ```
+
+You can control the number of decimal places, decimal point, and thousands separator using the additional arguments:
+
+```twig
+{{ 9800.333|number_format(2, '.', ',') }}
+```
+
+If no formatting options are provided then Twig will use the default formatting options of:
+
+* 0 decimal places.
+* , as the decimal point.
+* . as the thousands separator.
 
 
 ## print_r
@@ -479,9 +600,10 @@ The `isset` filter checks if a variable is set, and returns true of false:
 
 ## true
 
-
+The `true` filter, returns first parameter if variable is *true*, and the second parameter if *false*
 
 ```twig
+{{ some_var|true('yup, it is true', 'nope, it is not true') }}
 ```
 
 
