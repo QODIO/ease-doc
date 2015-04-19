@@ -451,10 +451,10 @@ For hashes, the merging process occurs on the keys: if the key does not already 
 The `nl2br` filter inserts HTML line breaks before all newlines in a string:
 
 ```twig
-{{ "I like Twig.\nYou will like it too."|nl2br }}
+{{ "I like Ease.\nYou will like it too."|nl2br }}
 {# outputs
 
-    I like Twig.<br />
+    I like Ease.<br />
     You will like it too.
 
 #}
@@ -486,7 +486,7 @@ You can control the number of decimal places, decimal point, and thousands separ
 {{ 9800.333|number_format(2, '.', ',') }}
 ```
 
-If no formatting options are provided then Twig will use the default formatting options of:
+If no formatting options are provided then `number_format` will use the default formatting options of:
 
 * 0 decimal places.
 * , as the decimal point.
@@ -702,13 +702,13 @@ The `title` filter returns a titlecased version of the value. Words will start w
 The `trim` filter strips whitespace (or other characters) from the beginning and end of a string:
 
 ```twig
-{{ '  I like Twig.  '|trim }}
+{{ '  I like Ease.  '|trim }}
 
-{# outputs 'I like Twig.' #}
+{# outputs 'I like Ease.' #}
 
-{{ '  I like Twig.'|trim('.') }}
+{{ '  I like Ease.'|trim('.') }}
 
-{# outputs '  I like Twig' #}
+{# outputs '  I like Ease' #}
 ```
 
 
