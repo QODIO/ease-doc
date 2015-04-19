@@ -1,6 +1,4 @@
-#Introduction
-
-####Ease Templates for Template Designers
+#Introduction<br>Ease Templates for Template Designers
 
 This document describes the syntax and semantics of the Ease Template engine and will be most useful as reference to those creating Ease templates. 
 
