@@ -1,5 +1,15 @@
 #Ease Templates Refernece - Statments
 
+* [if  (elseif, else, endif)](#if)
+* [set](#set)
+* [for (endfor)](#for)
+* [include](#include)
+* [dump_vars](#dump_vars)
+* [dump_translate_vars](#dump_translate_vars)
+* [dump_template_vars](#dump_template_vars)
+* [displayMedia](#displayMedia)
+* [getQuery](#getQuery)
+
 ##if
 
 The `if` statement in Ease Templates is comparable with the *if* statements of PHP.
