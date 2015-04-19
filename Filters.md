@@ -496,23 +496,28 @@ If no formatting options are provided then Twig will use the default formatting 
 
 ## print_r
 
-
+The `print_r` filter prints human-readable information about a variable:
 
 ```twig
+{{ some_var|print_r }}
 ```
 
 
 ## replace
 
-
+The `replace` filter formats a given string by replacing the placeholders (placeholders are free-form):
 
 ```twig
+{{ "I like %this% and %that%."|replace({'%this%': foo, '%that%': "bar"}) }}
+
+{# outputs I like foo and bar
+   if the foo parameter equals to the foo string. #}
 ```
 
 
 ## resize
 
-
+The `resize` filter
 
 ```twig
 ```
