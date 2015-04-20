@@ -169,6 +169,8 @@ Ease_calendar(2)|setLimit(40)
 ```
 
 
+&nbsp;
+
 ### Ease_calendaritem
 
 ```twig
@@ -307,6 +309,8 @@ Ease_newsgroup('2')|setLimit(40)
 ```
 
 
+&nbsp;
+
 ### Ease_newsarticle
 
 ```twig
@@ -393,6 +397,8 @@ Ease_products_filtergroup(2)|setAccumulateFilters(true)
 ```
 
 
+&nbsp;
+
 ### Ease_products_activeFilters
 
 ```twig
@@ -427,6 +433,8 @@ Ease_products_activeFilters('2,10,11')|setAncestorDelimiter(' : ')
 {# Generates a filters list of the filters 2, 10 and 11, and sets the ancestor delimiter to ' : ' #}
 ```
 
+
+&nbsp;
 
 ### Ease_products
 
@@ -471,6 +479,8 @@ Ease_products('2')|setLimit(40)
 {# Generates a products list, where the products have the filter 2, and sets the limit to 40, so 40 products will be shown #}
 ```
 
+
+&nbsp;
 
 ### Ease_product
 
