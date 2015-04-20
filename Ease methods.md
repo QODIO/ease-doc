@@ -127,7 +127,7 @@ simpleitemId | *none* | The id of the simple item
 
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
-simpleitemId | 1 | `setSimpleitemId` | Set the id of the simple item
+simpleitemId | *none* | `setSimpleitemId` | Set the id of the simple item
 imageWidth | *none* | `setImageWidth` | Set the width of the simple item, if it is an image (NOT YET SUPPORTED)
 imageHeight | *none* | `setImageHeight` | Set the height of the simple item, if it is an image (NOT YET SUPPORTED)
 class | *none* | `setClass` | Add a class to the generated simple item element
@@ -156,8 +156,8 @@ Ease_simpleitem(2)|setClass('some_class')
 {% Ease_slideshow(int slideshowId = 1) %}
 ```
 
-The method `Ease_slideshow` generates an Ease slideshow. 
-The initial constructor method takes one argument, the id of the slideshow (this id is the same id which is used in the table in the database, and therefor must exist in the database beforehand). 
+The method `Ease_slideshow` generates an Ease slideshow.<br>
+The initial constructor method takes one argument, the id of the slideshow (this id is the same id which is used in the table in the database, and therefor must exist in the database beforehand).<br>
 The default value of the parameter is **1**
 
 #### Constructor arguments
