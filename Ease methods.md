@@ -47,15 +47,44 @@ Slideshows
 
 ### Ease_openGraph
 
+```twig
+{% Ease_adgroup(int adgroupId) %}
+```
+
+
 ### Ease_header
+
+```twig
+{% Ease_adgroup(int adgroupId) %}
+```
+
 
 ### Ease_css
 
+```twig
+{% Ease_adgroup(int adgroupId) %}
+```
+
+
 ### Ease_javascript
+
+```twig
+{% Ease_adgroup(int adgroupId) %}
+```
+
 
 ### Ease_javascriptInline
 
+```twig
+{% Ease_adgroup(int adgroupId) %}
+```
+
+
 ### Ease_masterpageContent
+
+```twig
+{% Ease_adgroup(int adgroupId) %}
+```
 
 ### Ease_searchbox
 
