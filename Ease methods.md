@@ -52,12 +52,16 @@ Slideshows
 ```
 
 
+&nbsp;
+
 ### Ease_header
 
 ```twig
 {% Ease_adgroup(int adgroupId) %}
 ```
 
+
+&nbsp;
 
 ### Ease_css
 
@@ -66,12 +70,16 @@ Slideshows
 ```
 
 
+&nbsp;
+
 ### Ease_javascript
 
 ```twig
 {% Ease_adgroup(int adgroupId) %}
 ```
 
+
+&nbsp;
 
 ### Ease_javascriptInline
 
@@ -80,21 +88,57 @@ Slideshows
 ```
 
 
+&nbsp;
+
 ### Ease_masterpageContent
 
 ```twig
 {% Ease_adgroup(int adgroupId) %}
 ```
 
+&nbsp;
+
 ### Ease_searchbox
+
+```twig
+{% Ease_adgroup(int adgroupId) %}
+```
+
+
+&nbsp;
 
 ### Ease_menu
 
+```twig
+{% Ease_adgroup(int adgroupId) %}
+```
+
+
+&nbsp;
+
 ### Ease_pagemenuElements
+
+```twig
+{% Ease_adgroup(int adgroupId) %}
+```
+
+
+&nbsp;
 
 ### Ease_loginButton
 
+```twig
+{% Ease_adgroup(int adgroupId) %}
+```
+
+
+&nbsp;
+
 ### Ease_content
+
+```twig
+{% Ease_adgroup(int adgroupId) %}
+```
 
 
 &nbsp;
