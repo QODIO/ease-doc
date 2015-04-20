@@ -113,35 +113,35 @@ Slideshows
 
 ### Ease_slideshow
 
-#### Description
-
 ```twig
 {% Ease_slideshow(int slideshowId = 1) %}
 ```
 
 The method `Ease_slideshow` generates an Ease slideshow. 
-The initial constructor method takes one parameter, the id of the slideshow (this `Id` is the same `Id` which is used in the table in the database, and therefor must exist in the database beforehand). 
-The default value of the parameter is `1`
+The initial constructor method takes one argument, the id of the slideshow (this id is the same id which is used in the table in the database, and therefor must exist in the database beforehand). 
+The default value of the parameter is **1**
 
-#### Parameters
+#### Constructor arguments
 
-Parameter | Default value | Description
+Argument | Default value | Description
 --- | --- | ---
 slideshowId | 1 | The id of the slideshow
 
-#### Settings
+#### Parameters
 
-Method name | Parameters | Description
---- | --- | ---
-setSlideshowId | | Set the Id of the slideshow
-setWidth | | 
-setHeight | | 
-setTemplate | | 
-setPadding | | 
-setIgnorePadding | | 
-setButtonPosition | | 
+Parameter | Default value | Action name | Description
+--- | --- | --- | ---
+slideshowId | 1 | setSlideshowId | Set the id of the slideshow
+width | none | setWidth | Set the width of the slideshow
+height | none | setHeight | Set the height of the slideshow
+template | 'globalitems/slideshow' | setTemplate | Set the template file to use for the slideshow
+padding | 0 | setPadding | Set the padding of the ease overlay on the slideshow
+ignorePadding | false |  setIgnorePadding | Set the ease overlay to ignore the padding of the element
+buttonPosition | 'outside' | setButtonPosition | Set the button position of the ease overlay on the slideshow
 
 #### Examples
 
-Ease_slideshow(2)|setWidth(200)
-
+```twig
+Ease_slideshow(2)|setWidth(800)|setHeight(300)
+{# Generates a slideshow from the Id 2, and sets the size of the slides to be 800x300  #}
+```
