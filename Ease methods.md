@@ -131,13 +131,13 @@ slideshowId | 1 | The id of the slideshow
 
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
-slideshowId | 1 | setSlideshowId | Set the id of the slideshow
-width | none | setWidth | Set the width of the slideshow
-height | none | setHeight | Set the height of the slideshow
-template | 'globalitems/slideshow' | setTemplate | Set the template file to use for the slideshow
-padding | 0 | setPadding | Set the padding of the ease overlay on the slideshow
-ignorePadding | false |  setIgnorePadding | Set the ease overlay to ignore the padding of the element
-buttonPosition | 'outside' | setButtonPosition | Set the button position of the ease overlay on the slideshow
+slideshowId | 1 | `setSlideshowId` | Set the id of the slideshow
+width | *none* | `setWidth` | Set the width of the slideshow
+height | *none* | `setHeight` | Set the height of the slideshow
+template | 'globalitems/slideshow' | `setTemplate` | Set the template file to use for the slideshow
+padding | 0 | `setPadding` | Set the padding of the ease overlay on the slideshow
+ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the padding of the element
+buttonPosition | 'outside' | `setButtonPosition` | Set the button position of the ease overlay on the slideshow
 
 #### Examples
 
