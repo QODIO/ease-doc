@@ -99,6 +99,39 @@ Slideshows
 
 ### Ease_products_activeFilters
 
+```twig
+{% Ease_products_activeFilters(string productFilterIds) %}
+```
+
+The method `Ease_products_activeFilters` generates a list of currently active product filters.<br>
+The initial constructor method takes one argument, a comma seperated list of active filter ids.
+
+#### Constructor arguments
+
+Argument | Default value | Description
+--- | --- | ---
+productFilterIds | *none* | A comma seperated list of active filter ids.
+
+#### Parameters
+
+Parameter | Default value | Action name | Description
+--- | --- | --- | ---
+productFilterIds | *none* | `setProductFilterIds` | Set the comma seperated list of active filter ids.
+ancestorDelimiter | ' > ' | `setAncestorDelimiter` | Set the delimiter to show between the ancestors of the filters.
+--- | --- | --- | ---
+template | 'globalitems/products_active_filters' | `setTemplate` | Set the template file to use for the active filters list
+
+#### Examples
+
+```twig
+Ease_products_activeFilters('2,10,11')
+{# Generates a filters list of the filters 2, 10 and 11 #}
+
+Ease_products_activeFilters('2,10,11')|setAncestorDelimiter(' : ')
+{# Generates a filters list of the filters 2, 10 and 11, and sets the ancestor delimiter to ' : ' #}
+```
+
+
 ### Ease_products
 
 ```twig
@@ -123,7 +156,7 @@ excludeProductId | *none* | `setExcludeProductId` | Set the id of a product to e
 offset | 0 | `setOffset` | Set the offset of the products list. (E.g. if 10, then the first 10 products will be skipped.)
 limit | 20 | `setLimit` | Set the limit of the products list. (How many products should be shown initially).
 interval | 20 | `setInterval` | Set the interval of the products list more function. (This controls how many new products will be added to the list every time a user presses the more products button)
-orderBy | 'title_asc' | `setOrderBy` | Set the order of the products in the list. Accepted values are: `title_asc`, `title_desc`, `price_asc`, `price_desc`, `created_asc`, `created_desc`, `hits_asc`, `hits_desc`,.
+orderBy | 'title_asc' | `setOrderBy` | Set the order of the products in the list. Accepted values are: `title_asc`, `title_desc`, `price_asc`, `price_desc`, `created_asc`, `created_desc`, `hits_asc`, `hits_desc`.
 --- | --- | --- | ---
 template | 'globalitems/products' | `setTemplate` | Set the template file to use for the products list
 padding | 4 | `setPadding` | Set the padding of the ease overlay on the products list
