@@ -112,3 +112,16 @@ Slideshows
 ## Slideshows
 
 ### Ease_slideshow
+
+##### Methods
+
+Method name | Parameters | Description
+--- | --- | ---
+setSlideshowId | | 
+setWidth | | 
+setHeight | | 
+setTemplate | | 
+setPadding | | 
+setIgnorePadding | | 
+setButtonPosition | | 
+
