@@ -42,20 +42,15 @@ Slideshows
 
 
 &nbsp;
-
 # Core methods
-
 ### Ease_openGraph
-
 ```twig
 {% Ease_openGraph(int adgroupId) %}
 ```
 
 
 &nbsp;
-
 ### Ease_header
-
 ```twig
 {% Ease_header(int adgroupId) %}
 ```
