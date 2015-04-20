@@ -81,6 +81,43 @@ Slideshows
 
 ### Ease_adgroup
 
+```twig
+{% Ease_adgroup(int adgroupId) %}
+```
+
+The method `Ease_adgroup` generates an Ease adgroup.<br>
+The initial constructor method takes one argument, the id of the adgroup (this id is the same id which is used in the table in the database, and therefor must exist in the database beforehand).
+
+#### Constructor arguments
+
+Argument | Default value | Description
+--- | --- | ---
+adgroupId | 1 | The id of the adgroup
+
+#### Parameters
+
+Parameter | Default value | Action name | Description
+--- | --- | --- | ---
+adgroupId | 1 | `setSlideshowId` | Set the id of the adgroup
+width | 300 | `setWidth` | Set the width of the adgroup
+height | 250 | `setHeight` | Set the height of the adgroup
+quantity | 1 | `setHeight` | Set the number of ads to show
+--- | --- | --- | ---
+template | 'globalitems/adgroup' | `setTemplate` | Set the template file to use for the adgroup
+padding | 4 | `setPadding` | Set the padding of the ease overlay on the adgroup
+ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the padding of the element
+buttonPosition | 'outside' | `setButtonPosition` | Set the button position of the ease overlay on the adgroup
+
+#### Examples
+
+```twig
+Ease_adgroup(2)|setWidth(800)|setHeight(300)
+{# Generates a adgroup with the `Id` 2, and sets the size of the slides to be 800x300  #}
+
+Ease_adgroup(2)|setTemplate('some_folder/adgroup')
+{# Generates a adgroup with the `Id` 1, and sets the template to use something other than default (the extension .ease is optional)  #}
+```
+
 
 &nbsp;
 
