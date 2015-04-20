@@ -41,6 +41,8 @@ Slideshows
  * [Ease_slideshow](#ease_slideshow)
 
 
+&nbsp;
+
 # Core methods
 
 ### Ease_openGraph
@@ -66,13 +68,21 @@ Slideshows
 ### Ease_content
 
 
+&nbsp;
+
+&nbsp;
+
 # Module methods
 
+
+&nbsp;
 
 ## Adgroups
 
 ### Ease_adgroup
 
+
+&nbsp;
 
 ## Calendars
 
@@ -81,10 +91,14 @@ Slideshows
 ### Ease_calendaritem
 
 
+&nbsp;
+
 ## Menulists
 
 ### Ease_menulist
 
+
+&nbsp;
 
 ## Newsgroups
 
@@ -92,6 +106,8 @@ Slideshows
 
 ### Ease_newsarticle
 
+
+&nbsp;
 
 ## Products
 
@@ -214,6 +230,8 @@ Ease_product(2)|setTemplate('some_folder/product')
 ```
 
 
+&nbsp;
+
 ## Simpleitems
 
 ### Ease_simpleitem
@@ -258,6 +276,8 @@ Ease_simpleitem(2)|setClass('some_class')
 
 ```
 
+
+&nbsp;
 
 ## Slideshows
 
