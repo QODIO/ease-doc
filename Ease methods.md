@@ -122,7 +122,7 @@ productId | 1 | The id of the slideshow
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 productId | *none* | `setSlideshowId` | Set the id of the slideshow
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
+--- | --- | --- | ---
 template | 'globalitems/product' | `setTemplate` | Set the template file to use for the slideshow
 padding | 0 | `setPadding` | Set the padding of the ease overlay on the slideshow
 ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the padding of the element
