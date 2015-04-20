@@ -97,6 +97,48 @@ Slideshows
 
 ### Ease_menulist
 
+```twig
+{% Ease_menulist(int newsgroupId) %}
+```
+
+The method `Ease_menulist` generates a list of menu items. (Mostly used in global content areas).<br>
+The initial constructor method takes one argument, the id of the menu.<br>
+
+#### Constructor arguments
+
+Argument | Default value | Description
+--- | --- | ---
+menuId | *none* | The id of the menu.
+
+#### Parameters
+
+Parameter | Default value | Action name | Description
+--- | --- | --- | ---
+menuId | *none* | `setMenuId` | Set the id of the menu.
+excludeMenuitemId | *none* | `setExcludeMenuitemId` | Set the id of a menuitem to exclude (This is helpful if show a menu list on the same page as a menu item, but don't want the menu item to show up in the menu list).
+offset | 0 | `setOffset` | Set the offset of the menu list. (E.g. if 10, then the first 10 menu items will be skipped.)
+limit | 20 | `setLimit` | Set the limit of the menu list. (How many menu should be shown initially).
+imageWidth | 300 | `setImageWidth` | Set the width of the image of the menu items.
+imageHeight | 150 | `setImageHeight` | Set the height of the image of the menu items.
+--- | --- | --- | ---
+template | 'globalitems/menulist' | `setTemplate` | Set the template file to use for the menu list
+padding | 4 | `setPadding` | Set the padding of the ease overlay on the menu list
+ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the padding of the elements
+buttonPosition | 'inside' | `setButtonPosition` | Set the button position of the ease overlay on the menu list
+
+#### Examples
+
+```twig
+Ease_menulist(1)
+{# Generates a menu list, where the menu with id 1 #}
+
+Ease_menulist(2)|setTemplate('some_folder/newsgroup')
+{# Generates a menu list, with menu id 2, and sets the template to use something other than default (the extension .ease is optional) #}
+
+Ease_menulist(2)|setLimit(40)
+{# Generates a menu list, with menu id 2, and sets the limit to 40, so 40 menu items will be shown #}
+```
+
 
 &nbsp;
 
@@ -168,8 +210,6 @@ newsArticleId | 1 | The id of the newsarticle
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 newsArticleId | *none* | `setNewsArticleId` | Set the id of the newsarticle
-imageWidth | 800 | `setImageWidth` | Set the width of the image of the newsarticle.
-imageHeight | 0 | `setImageHeight` | Set the height of the image of the newsarticle.
 --- | --- | --- | ---
 template | 'globalitems/newsarticle' | `setTemplate` | Set the template file to use for the newsarticle
 padding | 0 | `setPadding` | Set the padding of the ease overlay on the newsarticle
@@ -181,9 +221,6 @@ buttonPosition | 'outside' | `setButtonPosition` | Set the button position of th
 ```twig
 Ease_newsarticle(1)
 {# Generates a newsarticle with the `Id` 1  #}
-
-Ease_newsarticle(1)|imageWidth(400)|setImageHeight(400)
-{# Generates a newsarticle with the `Id` 1, and sets the size of the main image to be 400x400  #}
 
 Ease_newsarticle(2)|setTemplate('some_folder/newsarticle')
 {# Generates a newsarticle with the `Id` 2, and sets the template to use something other than default (the extension .ease is optional) #}
