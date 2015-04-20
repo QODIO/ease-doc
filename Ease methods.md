@@ -113,6 +113,49 @@ Slideshows
 
 ### Ease_products_filtergroup
 
+```twig
+{% Ease_products_filtergroup(int productFiltergroupId) %}
+```
+
+The method `Ease_products_filtergroup` generates an Ease product filtergroup hierarchical list.<br>
+The initial constructor method takes one argument, the id of the filtergroup (this id is the same id which is used in the table in the database, and therefor must exist in the database beforehand).<br>
+
+#### Constructor arguments
+
+Argument | Default value | Description
+--- | --- | ---
+productFiltergroupId | 1 | The id of the filtergroup
+
+#### Parameters
+
+Parameter | Default value | Action name | Description
+--- | --- | --- | ---
+productFiltergroupId | 1 | `setProductFiltergroupId` | Set the id of the filtergroup
+productFilterId | *none* | `setProductFilterId` | Optionally set the id of the active filter (not really used)
+startDepth | 1 | `setStartDepth` | Set the menu start depth of the filtergroup.
+endDepth | *none* | `setEndDepth` | Set the menu end depth of the filtergroup.
+class | *none* | `setClass` | Add a class to the generated filtergroup element
+hideAdd | false | `hideAdd` | Hide/disable the Ease add filter button.
+imageWidth | 64 | `setImageWidth` | Set the width of the image of the filtergroup.
+imageHeight | 64 | `setImageHeight` | Set the height of the image of the filtergroup.
+featuredOnly | false | `setFeaturedOnly` | Set the filtergroup only to show featured filters.
+accumulateFilters | false | `setAccumulateFilters` | Set the filtergroup links to be accumulative (if true, then whenever a filter is chosen it will be added to the currently chosen filters).
+--- | --- | --- | ---
+padding | 0 | `setPadding` | Set the padding of the ease overlay on the filtergroup
+ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the padding of the element
+buttonPosition | 'outside' | `setButtonPosition` | Set the button position of the ease overlay on the filtergroup
+
+#### Examples
+
+```twig
+Ease_products_filtergroup(1)
+{# Generates a filtergroup with the `Id` 1  #}
+
+Ease_products_filtergroup(2)|setAccumulateFilters(true)
+{# Generates a filtergroup with the `Id` 2, and sets the chosen filters to be accumulative  #}
+```
+
+
 ### Ease_products_activeFilters
 
 ```twig
@@ -226,7 +269,6 @@ Ease_product(2)
 
 Ease_product(2)|setTemplate('some_folder/product')
 {# Generates a product with the `Id` 2, and sets the template to use to something other than default (the extension .ease is optional) #}
-
 ```
 
 
@@ -241,9 +283,8 @@ Ease_product(2)|setTemplate('some_folder/product')
 ```
 
 The method `Ease_simpleitem` generates an Ease simple item.<br>
-A simpleitem can be a text, richtext or an image (NOT YET SUPPORTED).<br>
+A simpleitem can be a text, richtext or an image (IMAGE NOT YET SUPPORTED). The type of the simple item is controlled from the database. E.g. text, richtext or image.<br>
 The initial constructor method takes one argument, the id of the simple item (this id is the same id which is used in the table in the database, and therefor must exist in the database beforehand).<br>
-The type of the simple item is also controlled from the database. E.g. text, richtext or image.
 
 #### Constructor arguments
 
@@ -273,7 +314,6 @@ Ease_simpleitem(1)
 
 Ease_simpleitem(2)|setClass('some_class')
 {# Generates a simple item with the `Id` 2, and adds a class to the generated simple item  #}
-
 ```
 
 
@@ -318,5 +358,4 @@ Ease_slideshow(2)|setWidth(800)|setHeight(300)
 
 Ease_slideshow|setTemplate('some_folder/slideshow.ease')
 {# Generates a slideshow with the `Id` 1, and sets the template to use to something other than default  #}
-
 ```
