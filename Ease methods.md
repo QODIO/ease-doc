@@ -113,19 +113,34 @@ Slideshows
 
 ### Ease_slideshow
 
-#### Constructor
-##### Parameters
-* slideshowId
+#### Description
 
-#### Methods
+```twig
+{% Ease_slideshow(int slideshowId = 1) %}
+```
+
+The method `Ease_slideshow` generates an Ease slideshow. 
+The initial constructor method takes one parameter, the id of the slideshow (this `Id` is the same `Id` which is used in the table in the database, and therefor must exist in the database beforehand). 
+The default value of the parameter is `1`
+
+#### Parameters
+
+Parameter | Default value | Description
+slideshowId | 1 | The id of the slideshow
+
+#### Settings
 
 Method name | Parameters | Description
 --- | --- | ---
-setSlideshowId | | 
+setSlideshowId | | Set the Id of the slideshow
 setWidth | | 
 setHeight | | 
 setTemplate | | 
 setPadding | | 
 setIgnorePadding | | 
 setButtonPosition | | 
+
+#### Examples
+
+Ease_slideshow(2)|setWidth(200)
 
