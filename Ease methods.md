@@ -88,7 +88,85 @@ Slideshows
 
 ### Ease_calendar
 
+```twig
+{% Ease_calendar(int calendarId) %}
+```
+
+The method `Ease_calendar` generates a list of Ease calander events.<br>
+The initial constructor method takes one argument, the id of the calendar.
+
+#### Constructor arguments
+
+Argument | Default value | Description
+--- | --- | ---
+calendarId | *none* | The id of the calendar.
+
+#### Parameters
+
+Parameter | Default value | Action name | Description
+--- | --- | --- | ---
+calendarId | *none* | `setCalendarId` | Set the id of the calendar.
+excludeCalendarItemId | *none* | `setExcludeCalendarItemId` | Set the id of a calendar event to exclude (This is helpful if show a calendar on the same page as a calendar event, but don't want the calendar event to show up in the list).
+offset | 0 | `setOffset` | Set the offset of the calendar. (E.g. if 10, then the first 10 calendar events will be skipped.)
+limit | 20 | `setLimit` | Set the limit of the calendar events. (How many calendar events should be shown initially).
+imageWidth | 200 | `setImageWidth` | Set the width of the images of the calendar events.
+imageHeight | 150 | `setImageHeight` | Set the height of the images of the calendar events.
+disableGroupEdit | false | `setDisableGroupEdit` | If true, then Ease overlays for the calendar is disabled 
+disableItemEdit | false | `setDisableItemEdit` | If true, then Ease overlays for the calendar events are disabled 
+--- | --- | --- | ---
+template | 'globalitems/calendar' | `setTemplate` | Set the template file to use for the calendar
+padding | 4 | `setPadding` | Set the padding of the ease overlay on the calendar
+ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the padding of the elements
+
+#### Examples
+
+```twig
+Ease_calendar(1)
+{# Generates a calendar of all items  #}
+
+Ease_calendar(2)|setTemplate('some_folder/calendar')
+{# Generates a calendar, with the id 2, and sets the template to use something other than default (the extension .ease is optional) #}
+
+Ease_calendar(2)|setLimit(40)
+{# Generates a calendar, with the id 2, and sets the limit to 40, so 40 events will be shown #}
+```
+
+
 ### Ease_calendaritem
+
+```twig
+{% Ease_calendaritem(int calendarItemId) %}
+```
+
+The method `Ease_calendaritem` generates a Ease calendar event.<br>
+The initial constructor method takes one argument, the id of the calendar event.<br>
+
+#### Constructor arguments
+
+Argument | Default value | Description
+--- | --- | ---
+calendarItemId | 1 | The id of the calendar event
+
+#### Parameters
+
+Parameter | Default value | Action name | Description
+--- | --- | --- | ---
+calendarItemId | *none* | `setCalendarItemId` | Set the id of the calendar event
+--- | --- | --- | ---
+template | 'globalitems/calendaritem' | `setTemplate` | Set the template file to use for the calendar event
+padding | 0 | `setPadding` | Set the padding of the ease overlay on the calendar event
+ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the padding of the element
+buttonPosition | 'outside' | `setButtonPosition` | Set the button position of the ease overlay on the calendar event
+
+#### Examples
+
+```twig
+Ease_calendaritem(1)
+{# Generates a calendar event with the `Id` 1, and sets the size of the slides to be 800x300  #}
+
+Ease_calendaritem(2)|setTemplate('some_folder/calendaritem')
+{# Generates a calendar event with the `Id` 2, and sets the template to use something other than default (the extension .ease is optional) #}
+```
 
 
 &nbsp;
@@ -98,11 +176,11 @@ Slideshows
 ### Ease_menulist
 
 ```twig
-{% Ease_menulist(int newsgroupId) %}
+{% Ease_menulist(int menuId) %}
 ```
 
 The method `Ease_menulist` generates a list of menu items. (Mostly used in global content areas).<br>
-The initial constructor method takes one argument, the id of the menu.<br>
+The initial constructor method takes one argument, the id of the menu.
 
 #### Constructor arguments
 
@@ -151,26 +229,28 @@ Ease_menulist(2)|setLimit(40)
 ```
 
 The method `Ease_newsgroup` generates a list of Ease newsarticles (newsgroup).<br>
-The initial constructor method takes one argument, a comma seperated list of filter ids.<br>
+The initial constructor method takes one argument, the id of the newsgroup.
 
 #### Constructor arguments
 
 Argument | Default value | Description
 --- | --- | ---
-newsgroupId | *none* | A comma seperated list of filter ids, that newsarticles have.
+newsgroupId | *none* | The id of the newsgroup.
 
 #### Parameters
 
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
-newsgroupId | *none* | `setProductFilterIds` | Set the comma seperated list of filter ids, that newsarticles should have.
+newsgroupId | *none* | `setNewsgroupId` | Set the id of the newsgroup.
 excludeNewsArticleId | *none* | `setExcludeNewsArticleId` | Set the id of a product to exclude (This is helpful if show a product list on the same page as a single product, but don't want the single product to show up in the list).
 offset | 0 | `setOffset` | Set the offset of the newsarticles list. (E.g. if 10, then the first 10 newsarticles will be skipped.)
 limit | 20 | `setLimit` | Set the limit of the newsarticles list. (How many newsarticles should be shown initially).
 interval | 20 | `setInterval` | Set the interval of the newsarticles list more function. (This controls how many new newsarticles will be added to the list every time a user presses the more newsarticles button)
 imageWidth | 200 | `setImageWidth` | Set the width of the image of the newsarticles.
 imageHeight | 150 | `setImageHeight` | Set the height of the image of the newsarticles.
-truncateLength | 250 | `setImageHeight` | Set the height of the image of the newsarticles.
+truncateLength | 250 | `setImageHeight` | Set the truncatelength of the article description text.
+disableGroupEdit | false | `setDisableGroupEdit` | If true, then Ease overlays for the newsgroup is disabled 
+disableItemEdit | `false | setDisableItemEdit` | If true, then Ease overlays for the newsarticles are disabled 
 --- | --- | --- | ---
 template | 'globalitems/newsgroup' | `setTemplate` | Set the template file to use for the newsarticles list
 padding | 4 | `setPadding` | Set the padding of the ease overlay on the newsarticles list
