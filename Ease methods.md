@@ -48,7 +48,7 @@ Slideshows
 ### Ease_openGraph
 
 ```twig
-{% Ease_adgroup(int adgroupId) %}
+{% Ease_openGraph(int adgroupId) %}
 ```
 
 
@@ -57,7 +57,7 @@ Slideshows
 ### Ease_header
 
 ```twig
-{% Ease_adgroup(int adgroupId) %}
+{% Ease_header(int adgroupId) %}
 ```
 
 
@@ -66,8 +66,10 @@ Slideshows
 ### Ease_css
 
 ```twig
-{% Ease_adgroup(int adgroupId) %}
+{% Ease_css %}
 ```
+
+The method `Ease_css`, returns all css link tags Ease uses. It's a helpful method to make sure all needed css files get included.
 
 
 &nbsp;
@@ -75,8 +77,9 @@ Slideshows
 ### Ease_javascript
 
 ```twig
-{% Ease_adgroup(int adgroupId) %}
+{% Ease_javascript(int adgroupId) %}
 ```
+The method `Ease_javascript`, returns all javascript link tags Ease uses. It's a helpful method to make sure all needed javascript files get included.
 
 
 &nbsp;
@@ -84,7 +87,7 @@ Slideshows
 ### Ease_javascriptInline
 
 ```twig
-{% Ease_adgroup(int adgroupId) %}
+{% Ease_javascriptInline(int adgroupId) %}
 ```
 
 
@@ -93,7 +96,7 @@ Slideshows
 ### Ease_masterpageContent
 
 ```twig
-{% Ease_adgroup(int adgroupId) %}
+{% Ease_masterpageContent(int adgroupId) %}
 ```
 
 &nbsp;
@@ -101,7 +104,7 @@ Slideshows
 ### Ease_searchbox
 
 ```twig
-{% Ease_adgroup(int adgroupId) %}
+{% Ease_searchbox(int adgroupId) %}
 ```
 
 
@@ -110,7 +113,7 @@ Slideshows
 ### Ease_menu
 
 ```twig
-{% Ease_adgroup(int adgroupId) %}
+{% Ease_menu(int adgroupId) %}
 ```
 
 
@@ -119,7 +122,7 @@ Slideshows
 ### Ease_pagemenuElements
 
 ```twig
-{% Ease_adgroup(int adgroupId) %}
+{% Ease_pagemenuElements(int adgroupId) %}
 ```
 
 
@@ -128,7 +131,7 @@ Slideshows
 ### Ease_loginButton
 
 ```twig
-{% Ease_adgroup(int adgroupId) %}
+{% Ease_loginButton(int adgroupId) %}
 ```
 
 
@@ -137,7 +140,7 @@ Slideshows
 ### Ease_content
 
 ```twig
-{% Ease_adgroup(int adgroupId) %}
+{% Ease_content(int adgroupId) %}
 ```
 
 
