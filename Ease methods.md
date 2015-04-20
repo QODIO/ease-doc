@@ -57,20 +57,15 @@ Slideshows
 
 
 &nbsp;
-
 ### Ease_css
-
 ```twig
 {% Ease_css %}
 ```
-
 The method `Ease_css`, returns all css link tags Ease uses. It's a helpful method to make sure all needed css files get included.
 
 
 &nbsp;
-
 ### Ease_javascript
-
 ```twig
 {% Ease_javascript(int adgroupId) %}
 ```
@@ -78,95 +73,73 @@ The method `Ease_javascript`, returns all javascript link tags Ease uses. It's a
 
 
 &nbsp;
-
 ### Ease_javascriptInline
-
 ```twig
 {% Ease_javascriptInline(int adgroupId) %}
 ```
 
 
 &nbsp;
-
 ### Ease_masterpageContent
-
 ```twig
 {% Ease_masterpageContent(int adgroupId) %}
 ```
 
 &nbsp;
-
 ### Ease_searchbox
-
 ```twig
 {% Ease_searchbox(int adgroupId) %}
 ```
 
 
 &nbsp;
-
 ### Ease_menu
-
 ```twig
 {% Ease_menu(int adgroupId) %}
 ```
 
 
 &nbsp;
-
 ### Ease_pagemenuElements
-
 ```twig
 {% Ease_pagemenuElements(int adgroupId) %}
 ```
 
 
 &nbsp;
-
 ### Ease_loginButton
-
 ```twig
 {% Ease_loginButton(int adgroupId) %}
 ```
 
 
 &nbsp;
-
 ### Ease_content
-
 ```twig
 {% Ease_content(int adgroupId) %}
 ```
 
 
 &nbsp;
-
 &nbsp;
-
 # Module methods
 
 
 &nbsp;
-
 ## Adgroups
-
 ### Ease_adgroup
-
 ```twig
 {% Ease_adgroup(int adgroupId) %}
 ```
-
 The method `Ease_adgroup` generates an Ease adgroup.<br>
 The initial constructor method takes one argument, the id of the adgroup (this id is the same id which is used in the table in the database, and therefor must exist in the database beforehand).
 
 #### Constructor arguments
-
 Argument | Default value | Description
 --- | --- | ---
 adgroupId | 1 | The id of the adgroup
 
 #### Parameters
-
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 adgroupId | 1 | `setSlideshowId` | Set the id of the adgroup
@@ -180,7 +153,6 @@ ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the 
 buttonPosition | 'outside' | `setButtonPosition` | Set the button position of the ease overlay on the adgroup
 
 #### Examples
-
 ```twig
 Ease_adgroup(2)|setWidth(800)|setHeight(300)
 {# Generates a adgroup with the `Id` 2, and sets the size of the slides to be 800x300  #}
@@ -191,26 +163,20 @@ Ease_adgroup(2)|setTemplate('some_folder/adgroup')
 
 
 &nbsp;
-
 ## Calendars
-
 ### Ease_calendar
-
 ```twig
 {% Ease_calendar(int calendarId) %}
 ```
-
 The method `Ease_calendar` generates a list of Ease calander events.<br>
 The initial constructor method takes one argument, the id of the calendar.
 
 #### Constructor arguments
-
 Argument | Default value | Description
 --- | --- | ---
 calendarId | *none* | The id of the calendar.
 
 #### Parameters
-
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 calendarId | *none* | `setCalendarId` | Set the id of the calendar.
@@ -227,7 +193,6 @@ padding | 4 | `setPadding` | Set the padding of the ease overlay on the calendar
 ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the padding of the elements
 
 #### Examples
-
 ```twig
 Ease_calendar(1)
 {# Generates a calendar of all items  #}
@@ -241,24 +206,19 @@ Ease_calendar(2)|setLimit(40)
 
 
 &nbsp;
-
 ### Ease_calendaritem
-
 ```twig
 {% Ease_calendaritem(int calendarItemId) %}
 ```
-
 The method `Ease_calendaritem` generates a Ease calendar event.<br>
 The initial constructor method takes one argument, the id of the calendar event.<br>
 
 #### Constructor arguments
-
 Argument | Default value | Description
 --- | --- | ---
 calendarItemId | 1 | The id of the calendar event
 
 #### Parameters
-
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 calendarItemId | *none* | `setCalendarItemId` | Set the id of the calendar event
@@ -269,7 +229,6 @@ ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the 
 buttonPosition | 'outside' | `setButtonPosition` | Set the button position of the ease overlay on the calendar event
 
 #### Examples
-
 ```twig
 Ease_calendaritem(1)
 {# Generates a calendar event with the `Id` 1, and sets the size of the slides to be 800x300  #}
@@ -280,26 +239,20 @@ Ease_calendaritem(2)|setTemplate('some_folder/calendaritem')
 
 
 &nbsp;
-
 ## Menulists
-
 ### Ease_menulist
-
 ```twig
 {% Ease_menulist(int menuId) %}
 ```
-
 The method `Ease_menulist` generates a list of menu items. (Mostly used in global content areas).<br>
 The initial constructor method takes one argument, the id of the menu.
 
 #### Constructor arguments
-
 Argument | Default value | Description
 --- | --- | ---
 menuId | *none* | The id of the menu.
 
 #### Parameters
-
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 menuId | *none* | `setMenuId` | Set the id of the menu.
@@ -315,7 +268,6 @@ ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the 
 buttonPosition | 'inside' | `setButtonPosition` | Set the button position of the ease overlay on the menu list
 
 #### Examples
-
 ```twig
 Ease_menulist(1)
 {# Generates a menu list, where the menu with id 1 #}
@@ -329,26 +281,20 @@ Ease_menulist(2)|setLimit(40)
 
 
 &nbsp;
-
 ## Newsgroups
-
 ### Ease_newsgroup
-
 ```twig
 {% Ease_newsgroup(int newsgroupId) %}
 ```
-
 The method `Ease_newsgroup` generates a list of Ease newsarticles (newsgroup).<br>
 The initial constructor method takes one argument, the id of the newsgroup.
 
 #### Constructor arguments
-
 Argument | Default value | Description
 --- | --- | ---
 newsgroupId | *none* | The id of the newsgroup.
 
 #### Parameters
-
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 newsgroupId | *none* | `setNewsgroupId` | Set the id of the newsgroup.
@@ -367,7 +313,6 @@ padding | 4 | `setPadding` | Set the padding of the ease overlay on the newsarti
 ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the padding of the elements
 
 #### Examples
-
 ```twig
 Ease_newsgroup
 {# Generates a newsarticles list of all items  #}
@@ -381,24 +326,19 @@ Ease_newsgroup('2')|setLimit(40)
 
 
 &nbsp;
-
 ### Ease_newsarticle
-
 ```twig
 {% Ease_newsarticle(int newsArticleId) %}
 ```
-
 The method `Ease_newsarticle` generates a single Ease newsarticle.<br>
 The initial constructor method takes one argument, the id of the newsarticle.<br>
 
 #### Constructor arguments
-
 Argument | Default value | Description
 --- | --- | ---
 newsArticleId | 1 | The id of the newsarticle
 
 #### Parameters
-
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 newsArticleId | *none* | `setNewsArticleId` | Set the id of the newsarticle
@@ -409,7 +349,6 @@ ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the 
 buttonPosition | 'outside' | `setButtonPosition` | Set the button position of the ease overlay on the newsarticle
 
 #### Examples
-
 ```twig
 Ease_newsarticle(1)
 {# Generates a newsarticle with the `Id` 1  #}
@@ -420,26 +359,20 @@ Ease_newsarticle(2)|setTemplate('some_folder/newsarticle')
 
 
 &nbsp;
-
 ## Products
-
 ### Ease_products_filtergroup
-
 ```twig
 {% Ease_products_filtergroup(int productFiltergroupId) %}
 ```
-
 The method `Ease_products_filtergroup` generates an Ease product filtergroup hierarchical list.<br>
 The initial constructor method takes one argument, the id of the filtergroup (this id is the same id which is used in the table in the database, and therefor must exist in the database beforehand).<br>
 
 #### Constructor arguments
-
 Argument | Default value | Description
 --- | --- | ---
 productFiltergroupId | 1 | The id of the filtergroup
 
 #### Parameters
-
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 productFiltergroupId | 1 | `setProductFiltergroupId` | Set the id of the filtergroup
@@ -458,7 +391,6 @@ ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the 
 buttonPosition | 'outside' | `setButtonPosition` | Set the button position of the ease overlay on the filtergroup
 
 #### Examples
-
 ```twig
 Ease_products_filtergroup(1)
 {# Generates a filtergroup with the `Id` 1  #}
@@ -469,24 +401,19 @@ Ease_products_filtergroup(2)|setAccumulateFilters(true)
 
 
 &nbsp;
-
 ### Ease_products_activeFilters
-
 ```twig
 {% Ease_products_activeFilters(string productFilterIds) %}
 ```
-
 The method `Ease_products_activeFilters` generates a list of currently active product filters.<br>
 The initial constructor method takes one argument, a comma seperated list of active filter ids.
 
 #### Constructor arguments
-
 Argument | Default value | Description
 --- | --- | ---
 productFilterIds | *none* | A comma seperated list of active filter ids.
 
 #### Parameters
-
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 productFilterIds | *none* | `setProductFilterIds` | Set the comma seperated list of active filter ids.
@@ -495,7 +422,6 @@ ancestorDelimiter | ' > ' | `setAncestorDelimiter` | Set the delimiter to show b
 template | 'globalitems/products_active_filters' | `setTemplate` | Set the template file to use for the active filters list
 
 #### Examples
-
 ```twig
 Ease_products_activeFilters('2,10,11')
 {# Generates a filters list of the filters 2, 10 and 11 #}
@@ -506,24 +432,19 @@ Ease_products_activeFilters('2,10,11')|setAncestorDelimiter(' : ')
 
 
 &nbsp;
-
 ### Ease_products
-
 ```twig
 {% Ease_products(string productFilterIds) %}
 ```
-
 The method `Ease_products` generates a list of Ease products.<br>
 The initial constructor method takes one argument, a comma seperated list of filter ids.<br>
 
 #### Constructor arguments
-
 Argument | Default value | Description
 --- | --- | ---
 productFilterIds | *none* | A comma seperated list of filter ids, that products have.
 
 #### Parameters
-
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 productFilterIds | *none* | `setProductFilterIds` | Set the comma seperated list of filter ids, that products should have.
@@ -538,7 +459,6 @@ padding | 4 | `setPadding` | Set the padding of the ease overlay on the products
 ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the padding of the elements
 
 #### Examples
-
 ```twig
 Ease_products
 {# Generates a products list of all items  #}
@@ -552,24 +472,19 @@ Ease_products('2')|setLimit(40)
 
 
 &nbsp;
-
 ### Ease_product
-
 ```twig
 {% Ease_product(int productId) %}
 ```
-
 The method `Ease_product` generates a single Ease product.<br>
 The initial constructor method takes one argument, the id of the product.<br>
 
 #### Constructor arguments
-
 Argument | Default value | Description
 --- | --- | ---
 productId | 1 | The id of the product
 
 #### Parameters
-
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 productId | *none* | `setSlideshowId` | Set the id of the product
@@ -580,7 +495,6 @@ ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the 
 buttonPosition | 'outside' | `setButtonPosition` | Set the button position of the ease overlay on the product
 
 #### Examples
-
 ```twig
 Ease_product(1)
 {# Generates a product with the `Id` 1, and sets the size of the slides to be 800x300  #}
@@ -591,27 +505,21 @@ Ease_product(2)|setTemplate('some_folder/product')
 
 
 &nbsp;
-
 ## Simpleitems
-
 ### Ease_simpleitem
-
 ```twig
 {% Ease_simpleitem(int simpleitemId) %}
 ```
-
 The method `Ease_simpleitem` generates an Ease simple item.<br>
 A simpleitem can be a text, richtext or an image (IMAGE NOT YET SUPPORTED). The type of the simple item is controlled from the database. E.g. text, richtext or image.<br>
 The initial constructor method takes one argument, the id of the simple item (this id is the same id which is used in the table in the database, and therefor must exist in the database beforehand).<br>
 
 #### Constructor arguments
-
 Argument | Default value | Description
 --- | --- | ---
 simpleitemId | *none* | The id of the simple item
 
 #### Parameters
-
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 simpleitemId | *none* | `setSimpleitemId` | Set the id of the simple item
@@ -625,7 +533,6 @@ ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the 
 buttonPosition | 'outside' | `setButtonPosition` | Set the button position of the ease overlay on the simple item
 
 #### Examples
-
 ```twig
 Ease_simpleitem(1)
 {# Generates a simple item with the `Id` 1  #}
@@ -636,27 +543,21 @@ Ease_simpleitem(2)|setClass('some_class')
 
 
 &nbsp;
-
 ## Slideshows
-
 ### Ease_slideshow
-
 ```twig
 {% Ease_slideshow(int slideshowId = 1) %}
 ```
-
 The method `Ease_slideshow` generates an Ease slideshow.<br>
 The initial constructor method takes one argument, the id of the slideshow (this id is the same id which is used in the table in the database, and therefor must exist in the database beforehand).<br>
 The default value of the parameter is **1**
 
 #### Constructor arguments
-
 Argument | Default value | Description
 --- | --- | ---
 slideshowId | 1 | The id of the slideshow
 
 #### Parameters
-
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 slideshowId | 1 | `setSlideshowId` | Set the id of the slideshow
@@ -669,7 +570,6 @@ ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the 
 buttonPosition | 'outside' | `setButtonPosition` | Set the button position of the ease overlay on the slideshow
 
 #### Examples
-
 ```twig
 Ease_slideshow(2)|setWidth(800)|setHeight(300)
 {# Generates a slideshow with the `Id` 2, and sets the size of the slides to be 800x300  #}
