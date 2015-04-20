@@ -103,13 +103,49 @@ Slideshows
 
 ### Ease_product
 
+```twig
+{% Ease_product(int productId) %}
+```
+
+The method `Ease_product` generates an Ease slideshow.<br>
+The initial constructor method takes one argument, the id of the slideshow (this id is the same id which is used in the table in the database, and therefor must exist in the database beforehand).<br>
+The default value of the parameter is **1**
+
+#### Constructor arguments
+
+Argument | Default value | Description
+--- | --- | ---
+productId | 1 | The id of the slideshow
+
+#### Parameters
+
+Parameter | Default value | Action name | Description
+--- | --- | --- | ---
+productId | *none* | `setSlideshowId` | Set the id of the slideshow
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+template | 'globalitems/product' | `setTemplate` | Set the template file to use for the slideshow
+padding | 0 | `setPadding` | Set the padding of the ease overlay on the slideshow
+ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the padding of the element
+buttonPosition | 'outside' | `setButtonPosition` | Set the button position of the ease overlay on the slideshow
+
+#### Examples
+
+```twig
+Ease_product(2)|setWidth(800)|setHeight(300)
+{# Generates a slideshow with the `Id` 2, and sets the size of the slides to be 800x300  #}
+
+Ease_product|setTemplate('some_folder/slideshow.ease')
+{# Generates a slideshow with the `Id` 1, and sets the size of the slides to be 800x300  #}
+
+```
+
 
 ## Simpleitems
 
 ### Ease_simpleitem
 
 ```twig
-{% Ease_simpleitem(int simpleitemId = 1) %}
+{% Ease_simpleitem(int simpleitemId) %}
 ```
 
 The method `Ease_simpleitem` generates an Ease simple item.<br>
