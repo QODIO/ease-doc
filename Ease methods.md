@@ -126,6 +126,7 @@ The default value of the parameter is `1`
 #### Parameters
 
 Parameter | Default value | Description
+--- | --- | ---
 slideshowId | 1 | The id of the slideshow
 
 #### Settings
