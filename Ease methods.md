@@ -143,5 +143,5 @@ buttonPosition | 'outside' | `setButtonPosition` | Set the button position of th
 
 ```twig
 Ease_slideshow(2)|setWidth(800)|setHeight(300)
-{# Generates a slideshow from the Id 2, and sets the size of the slides to be 800x300  #}
+{# Generates a slideshow with the `Id` 2, and sets the size of the slides to be 800x300  #}
 ```
