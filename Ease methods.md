@@ -104,7 +104,90 @@ Slideshows
 
 ### Ease_newsgroup
 
+```twig
+{% Ease_newsgroup(int newsgroupId) %}
+```
+
+The method `Ease_newsgroup` generates a list of Ease newsarticles (newsgroup).<br>
+The initial constructor method takes one argument, a comma seperated list of filter ids.<br>
+
+#### Constructor arguments
+
+Argument | Default value | Description
+--- | --- | ---
+newsgroupId | *none* | A comma seperated list of filter ids, that newsarticles have.
+
+#### Parameters
+
+Parameter | Default value | Action name | Description
+--- | --- | --- | ---
+newsgroupId | *none* | `setProductFilterIds` | Set the comma seperated list of filter ids, that newsarticles should have.
+excludeNewsArticleId | *none* | `setExcludeNewsArticleId` | Set the id of a product to exclude (This is helpful if show a product list on the same page as a single product, but don't want the single product to show up in the list).
+offset | 0 | `setOffset` | Set the offset of the newsarticles list. (E.g. if 10, then the first 10 newsarticles will be skipped.)
+limit | 20 | `setLimit` | Set the limit of the newsarticles list. (How many newsarticles should be shown initially).
+interval | 20 | `setInterval` | Set the interval of the newsarticles list more function. (This controls how many new newsarticles will be added to the list every time a user presses the more newsarticles button)
+imageWidth | 200 | `setImageWidth` | Set the width of the image of the newsarticles.
+imageHeight | 150 | `setImageHeight` | Set the height of the image of the newsarticles.
+truncateLength | 250 | `setImageHeight` | Set the height of the image of the newsarticles.
+--- | --- | --- | ---
+template | 'globalitems/newsgroup' | `setTemplate` | Set the template file to use for the newsarticles list
+padding | 4 | `setPadding` | Set the padding of the ease overlay on the newsarticles list
+ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the padding of the elements
+
+#### Examples
+
+```twig
+Ease_newsgroup
+{# Generates a newsarticles list of all items  #}
+
+Ease_newsgroup('2,10')|setTemplate('some_folder/newsgroup')
+{# Generates a newsarticles list, where the newsarticles have the filter 2 or 10, and sets the template to use something other than default (the extension .ease is optional) #}
+
+Ease_newsgroup('2')|setLimit(40)
+{# Generates a newsarticles list, where the newsarticles have the filter 2, and sets the limit to 40, so 40 newsarticles will be shown #}
+```
+
+
 ### Ease_newsarticle
+
+```twig
+{% Ease_newsarticle(int newsArticleId) %}
+```
+
+The method `Ease_newsarticle` generates a single Ease newsarticle.<br>
+The initial constructor method takes one argument, the id of the newsarticle.<br>
+
+#### Constructor arguments
+
+Argument | Default value | Description
+--- | --- | ---
+newsArticleId | 1 | The id of the newsarticle
+
+#### Parameters
+
+Parameter | Default value | Action name | Description
+--- | --- | --- | ---
+newsArticleId | *none* | `setNewsArticleId` | Set the id of the newsarticle
+imageWidth | 800 | `setImageWidth` | Set the width of the image of the newsarticle.
+imageHeight | 0 | `setImageHeight` | Set the height of the image of the newsarticle.
+--- | --- | --- | ---
+template | 'globalitems/newsarticle' | `setTemplate` | Set the template file to use for the newsarticle
+padding | 0 | `setPadding` | Set the padding of the ease overlay on the newsarticle
+ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the padding of the element
+buttonPosition | 'outside' | `setButtonPosition` | Set the button position of the ease overlay on the newsarticle
+
+#### Examples
+
+```twig
+Ease_newsarticle(1)
+{# Generates a newsarticle with the `Id` 1  #}
+
+Ease_newsarticle(1)|imageWidth(400)|setImageHeight(400)
+{# Generates a newsarticle with the `Id` 1, and sets the size of the main image to be 400x400  #}
+
+Ease_newsarticle(2)|setTemplate('some_folder/newsarticle')
+{# Generates a newsarticle with the `Id` 2, and sets the template to use something other than default (the extension .ease is optional) #}
+```
 
 
 &nbsp;
@@ -228,7 +311,7 @@ Ease_products
 {# Generates a products list of all items  #}
 
 Ease_products('2,10')|setTemplate('some_folder/products')
-{# Generates a products list, where the products have the filter 2 or 10, and sets the template to use to something other than default (the extension .ease is optional) #}
+{# Generates a products list, where the products have the filter 2 or 10, and sets the template to use something other than default (the extension .ease is optional) #}
 
 Ease_products('2')|setLimit(40)
 {# Generates a products list, where the products have the filter 2, and sets the limit to 40, so 40 products will be shown #}
@@ -264,11 +347,11 @@ buttonPosition | 'outside' | `setButtonPosition` | Set the button position of th
 #### Examples
 
 ```twig
-Ease_product(2)
+Ease_product(1)
 {# Generates a product with the `Id` 1, and sets the size of the slides to be 800x300  #}
 
 Ease_product(2)|setTemplate('some_folder/product')
-{# Generates a product with the `Id` 2, and sets the template to use to something other than default (the extension .ease is optional) #}
+{# Generates a product with the `Id` 2, and sets the template to use something other than default (the extension .ease is optional) #}
 ```
 
 
@@ -357,5 +440,5 @@ Ease_slideshow(2)|setWidth(800)|setHeight(300)
 {# Generates a slideshow with the `Id` 2, and sets the size of the slides to be 800x300  #}
 
 Ease_slideshow|setTemplate('some_folder/slideshow.ease')
-{# Generates a slideshow with the `Id` 1, and sets the template to use to something other than default  #}
+{# Generates a slideshow with the `Id` 1, and sets the template to use something other than default  #}
 ```
