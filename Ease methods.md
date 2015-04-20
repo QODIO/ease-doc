@@ -113,7 +113,11 @@ Slideshows
 
 ### Ease_slideshow
 
-##### Methods
+#### Constructor
+##### Parameters
+* slideshowId
+
+#### Methods
 
 Method name | Parameters | Description
 --- | --- | ---
