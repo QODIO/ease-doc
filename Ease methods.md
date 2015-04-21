@@ -111,7 +111,7 @@ Argument | Default value | Description
 class | 'searchSite' | A class to be added to the searchbox element
 placeholderText | *null* | The placeholder text for the search box
 
-#### Parameters
+#### Parameters and Actions
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 class | 'searchSite' | `setClass` | Set the class of the searchbox
@@ -159,7 +159,7 @@ Argument | Default value | Description
 --- | --- | ---
 text | '' | The text to be shown on the login button
 
-#### Parameters
+#### Parameters and Actions
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 text | '' | `setText` | Set the text to be shown on the login button
@@ -197,7 +197,7 @@ Argument | Default value | Description
 --- | --- | ---
 adgroupId | 1 | The id of the adgroup
 
-#### Parameters
+#### Parameters and Actions
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 adgroupId | 1 | `setSlideshowId` | Set the id of the adgroup
@@ -234,7 +234,7 @@ Argument | Default value | Description
 --- | --- | ---
 calendarId | *none* | The id of the calendar.
 
-#### Parameters
+#### Parameters and Actions
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 calendarId | *none* | `setCalendarId` | Set the id of the calendar.
@@ -276,7 +276,7 @@ Argument | Default value | Description
 --- | --- | ---
 calendarItemId | 1 | The id of the calendar event
 
-#### Parameters
+#### Parameters and Actions
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 calendarItemId | *none* | `setCalendarItemId` | Set the id of the calendar event
@@ -310,7 +310,7 @@ Argument | Default value | Description
 --- | --- | ---
 menuId | *none* | The id of the menu.
 
-#### Parameters
+#### Parameters and Actions
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 menuId | *none* | `setMenuId` | Set the id of the menu.
@@ -352,7 +352,7 @@ Argument | Default value | Description
 --- | --- | ---
 newsgroupId | *none* | The id of the newsgroup.
 
-#### Parameters
+#### Parameters and Actions
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 newsgroupId | *none* | `setNewsgroupId` | Set the id of the newsgroup.
@@ -396,7 +396,7 @@ Argument | Default value | Description
 --- | --- | ---
 newsArticleId | 1 | The id of the newsarticle
 
-#### Parameters
+#### Parameters and Actions
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 newsArticleId | *none* | `setNewsArticleId` | Set the id of the newsarticle
@@ -430,7 +430,7 @@ Argument | Default value | Description
 --- | --- | ---
 productFiltergroupId | 1 | The id of the filtergroup
 
-#### Parameters
+#### Parameters and Actions
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 productFiltergroupId | 1 | `setProductFiltergroupId` | Set the id of the filtergroup
@@ -471,7 +471,7 @@ Argument | Default value | Description
 --- | --- | ---
 productFilterIds | *none* | A comma seperated list of active filter ids.
 
-#### Parameters
+#### Parameters and Actions
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 productFilterIds | *none* | `setProductFilterIds` | Set the comma seperated list of active filter ids.
@@ -502,7 +502,7 @@ Argument | Default value | Description
 --- | --- | ---
 productFilterIds | *none* | A comma seperated list of filter ids, that products have.
 
-#### Parameters
+#### Parameters and Actions
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 productFilterIds | *none* | `setProductFilterIds` | Set the comma seperated list of filter ids, that products should have.
@@ -542,7 +542,7 @@ Argument | Default value | Description
 --- | --- | ---
 productId | 1 | The id of the product
 
-#### Parameters
+#### Parameters and Actions
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 productId | *none* | `setSlideshowId` | Set the id of the product
@@ -577,7 +577,7 @@ Argument | Default value | Description
 --- | --- | ---
 simpleitemId | *none* | The id of the simple item
 
-#### Parameters
+#### Parameters and Actions
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 simpleitemId | *none* | `setSimpleitemId` | Set the id of the simple item
@@ -615,7 +615,7 @@ Argument | Default value | Description
 --- | --- | ---
 slideshowId | 1 | The id of the slideshow
 
-#### Parameters
+#### Parameters and Actions
 Parameter | Default value | Action name | Description
 --- | --- | --- | ---
 slideshowId | 1 | `setSlideshowId` | Set the id of the slideshow
