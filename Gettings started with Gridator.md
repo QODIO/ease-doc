@@ -2,9 +2,9 @@
 
 &nbsp;
 &nbsp;
-## What Comes With Gridator?
+## The Core
 
-### The Grid
+### Grid
 Create powerful multi-device layouts quickly and easily with the default 12-column, nest-able Gridator grid. If you're familiar with grid systems, you'll feel right at home. If not, you'll learn quickly.
 
 ![Image of Grid](https://github.com/ingipingi/Work/blob/master/images/grid.png)
@@ -12,6 +12,11 @@ Create powerful multi-device layouts quickly and easily with the default 12-colu
 
 ### Block Grid
 Block grids give you a way to evenly split contents of a list within the grid. If you wanted to create a row of five images or paragraphs that need to stay evenly spaced no matter the screen size, the block grid is for you.
+
+
+&nbsp;
+&nbsp;
+## The Elements
 
 ### Buttons
 Clicking on stuff is awesome, so hook up your users with buttons to do stuff. There are some lightweight button styles for size, presentation, and color to make customizing your own button as easy as adding a class. There are also button groups, dropdown buttons, and spilt buttons.
@@ -51,3 +56,56 @@ Typography in Gridator is meant to make your life easier by providing clean, att
 
 ### Blockquotes
 Sometimes other people say smart things, and you may want to mention that through a blockquote callout. We've got you covered.
+
+&nbsp;
+&nbsp;
+## The Utilities
+
+### Float Classes
+
+### Radius and Rounded Classes
+
+### Text Align Classes
+
+### Visibility Classes
+
+### 
+
+### 
+
+
+&nbsp;
+&nbsp;
+## The Functions
+
+### blend_colors
+Used to blend two colors together
+##### Definition:
+```stylus
+blend_colors(source_color, percent = 50%, blend_width = #ccc)
+```
+##### Example:
+```stylus
+blend_colors(#f00, 50%, #00f)
+/* Should return approx. #808 */
+```
+
+
+### clearfix
+
+### is_dark
+
+
+### is_light
+
+### overflow
+
+### fixed
+
+### absolute
+
+### relative
+
+### size
+
+### border
