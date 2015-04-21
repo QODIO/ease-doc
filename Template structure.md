@@ -1,7 +1,7 @@
 # Ease Template Structure<br>Ease Templates Reference
 
 ### File and Folder Structure
-* <contentitems>
+* [contentitems]
   * album.ease
   * albumcollection_album.ease
   * albumcollection_layout1.ease
@@ -20,8 +20,8 @@
   * textitem_layout5.ease
   * textitem_layout6.ease
   * textitem_layout7.ease
-* <css>
-  * <gridator>
+* [css]
+  * [gridator]
     * ... (all gridator .styl files)
   * _all.html
   * _grid.html
@@ -31,8 +31,8 @@
   * stylesheet.styl
     * stylesheet.css
   * variables.styl
-* <fonts>
-* <globalitems>
+* [fonts]
+* [globalitems]
   * adgroup.ease
   * calendar.ease
   * calendaritem.ease
@@ -46,8 +46,8 @@
   * products_active_filters.ease
   * simpleitem.ease
   * slideshow.ease
-* <images>
-* <js>
+* [images]
+* [js]
 * calendar.ease
 * calendaritem.ease
 * frontpage.ease
