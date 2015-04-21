@@ -90,22 +90,94 @@ blend_colors(#f00, 50%, #00f)
 /* Should return approx. #808 */
 ```
 
-
 ### clearfix
+Returns clearfix to the class
 
 ### is_dark
-
+Check if a color is dark by passing a color as the first argument, return second argument if true, third argument if not.
+##### Definition:
+```stylus
+is_dark(color, then_color = #fff, else_color = #000)
+```
+##### Example:
+```stylus
+is_dark(#333, #f00, #00f)
+/* Returns #f00 */
+```
 
 ### is_light
+Check if a color is light by passing a color as the first argument, return second argument if true, third argument if not.
+##### Definition:
+```stylus
+is_light(color, then_color = #fff, else_color = #000)
+```
+##### Example:
+```stylus
+is_light(#333, #f00, #00f)
+/* Returns #00f */
+```
 
 ### overflow
+Adds ellipsis support for overflow
 
 ### fixed
+Shorthand for setting up a fixed element
+```stylus
+fixed('left 10px top 5px')
+```
+Is the same as writing:
+```css
+position: fixed;
+left: 10px
+top: 5px;
+```
 
 ### absolute
+Shorthand for setting up a absolute element
+```stylus
+absolute('left 10px top 5px')
+```
+Is the same as writing:
+```css
+position: absolute;
+left: 10px
+top: 5px;
+```
 
 ### relative
+Shorthand for setting up a relative element
+```stylus
+relative('left 10px top 5px')
+```
+Is the same as writing:
+```css
+position: relative;
+left: 10px
+top: 5px;
+```
 
 ### size
+Set the size of an element. If only first parameter is given, then both width and height will be set to that.
+##### Definition:
+```stylus
+size(width[, height])
+```
+##### Example:
+```stylus
+size(300px, 200px)
+```
+Is the same as writing:
+```css
+width: 300px
+height: 200px;
+```
 
 ### border
+Adds the ability to omit border style when setting border. E.g.:
+```stylus
+border 3px #f00
+```
+Is the same as writing:
+```css
+border: 3px solid #f00;
+```
