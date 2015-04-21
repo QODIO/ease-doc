@@ -1,1 +1,61 @@
-# 
+# Ease Template Structure<br>Ease Templates Reference
+
+### File and Folder Structure
+* <contentitems>
+  * album.ease
+  * albumcollection_album.ease
+  * albumcollection_layout1.ease
+  * albumcollection_layout1.ease
+  * filescollection.ease
+  * glossary.ease
+  * htmlitem.ease
+  * placescollection_layout1.ease
+  * placescollection_layout2.ease
+  * placescollection_place.ease
+  * schedule.ease
+  * textitem_layout1.ease
+  * textitem_layout2.ease
+  * textitem_layout3.ease
+  * textitem_layout4.ease
+  * textitem_layout5.ease
+  * textitem_layout6.ease
+  * textitem_layout7.ease
+* <css>
+  * <gridator>
+    * ... (all gridator .styl files)
+  * _all.html
+  * _grid.html
+  * fontface.css
+  * gridator.styl
+    * gridator.css
+  * stylesheet.styl
+    * stylesheet.css
+  * variables.styl
+* <fonts>
+* <globalitems>
+  * adgroup.ease
+  * calendar.ease
+  * calendaritem.ease
+  * menulist.ease
+  * newsarticle.ease
+  * newsgroup.ease
+  * newsgroup_grid.ease
+  * newsgroup_list.ease
+  * product.ease
+  * products.ease
+  * products_active_filters.ease
+  * simpleitem.ease
+  * slideshow.ease
+* <images>
+* <js>
+* calendar.ease
+* calendaritem.ease
+* frontpage.ease
+* masterpage.ease
+* newsarticle.ease
+* newsgroup.ease
+* newsletter_email.html
+* newsletter_unsubscribe_success.ease
+* page.ease
+* product.ease
+* products.ease
