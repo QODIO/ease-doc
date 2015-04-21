@@ -1,5 +1,24 @@
 # Gridator Kitchen Sink
 
+#### Elements
+* [Grid](#grid)
+* [Block Grid](#block_grid)
+* [Alert Boxes](#alert_boxes)
+* [Breadcrumbs](#breadcrumbs)
+* [Buttons](#buttons)
+* [Buttongroups](#buttongroups)
+* [Dropdown Buttons](#dropdown_buttons)
+* [Split Buttons](#split_buttons)
+* [Forms](#forms)
+* [Video](#video)
+* [Inline Lists](#inline_lists)
+* [Keystroke](#keytroke)
+* [Pagination](#pagination)
+* [Panels](#panels)
+* [Progress Bars](#progressbars)
+* [Type](#type)
+* [Blockquote](#blockquote)
+
 &nbsp;
 &nbsp;
 ## Grid
@@ -459,7 +478,7 @@ To make something pretty, press and hold <kbd>cmd + alt + shift + w + a + !</kbd
 
 &nbsp;
 &nbsp;
-## Progress Bars
+## Progressbars
 ![Progress Bars](https://github.com/ingipingi/Work/blob/master/images/progress-bars.png)
 ```html
 <div class="progress medium-6">
