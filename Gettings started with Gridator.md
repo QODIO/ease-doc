@@ -207,16 +207,16 @@ border: 3px solid #f00;
 &nbsp;
 ## The Media Queries
 
-##### Theese are the ranges:
-small-range-lower 	= 0px
-small-range-upper 	= 640px
-medium-range-lower 	= 641px
-medium-range-upper 	= 1024px
-large-range-lower 	= 1025px
-large-range-upper 	= 1440px
-xlarge-range-lower 	= 1441px
-xlarge-range-upper 	= 1920px
-xxlarge-range-lower = 1921px
+##### Theese are the ranges the media queries use:
+* small-range-lower 	= 0px
+* small-range-upper 	= 640px
+* medium-range-lower 	= 641px
+* medium-range-upper 	= 1024px
+* large-range-lower 	= 1025px
+* large-range-upper 	= 1440px
+* xlarge-range-lower 	= 1441px
+* xlarge-range-upper 	= 1920px
+* xxlarge-range-lower = 1921px
 
 ##### These are the available media sizes you can use
 Query variable | CSS equivelant
@@ -239,3 +239,17 @@ Query variable | CSS equivelant
 `$xxlarge-up` | "only screen and (min-width: 1921px)"
 `$xxlarge-down` | "only screen"
 `$xxlarge-only` | "only screen and (min-width: 1921px)"
+
+##### Examples:
+if you want to the included classes to only be used at specefik size:
+```stylus
+@media $large-down
+  .header
+    background-color red
+```
+or if you want to do it inside a class (helpful for the flow of the style):
+```stylus
+.header
+  @media $large-down
+    background-color red
+```
