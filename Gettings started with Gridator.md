@@ -1,8 +1,4 @@
-### Gridator
-###### by Faroe Media
-&nbsp;
-
-# Gettings started
+# Gettings started with Gridator
 
 &nbsp;
 &nbsp;
