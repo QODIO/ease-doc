@@ -4,6 +4,7 @@
 * [The Elements](#the-elements)
 * [The Utilities](#the-utilities)
 * [The Functions](#the-functions)
+* [The Media Queries](#the-media-queries)
 
 &nbsp;
 &nbsp;
@@ -200,3 +201,40 @@ Is the same as writing:
 ```css
 border: 3px solid #f00;
 ```
+
+
+&nbsp;
+&nbsp;
+## The Media Queries
+
+##### Theese are the ranges:
+small-range-lower 	= 0px
+small-range-upper 	= 640px
+medium-range-lower 	= 641px
+medium-range-upper 	= 1024px
+large-range-lower 	= 1025px
+large-range-upper 	= 1440px
+xlarge-range-lower 	= 1441px
+xlarge-range-upper 	= 1920px
+xxlarge-range-lower = 1921px
+
+##### These are the available media sizes you can use
+Query variable | CSS equivelant
+`$screen` | "only screen"
+`$landscape` | "only screen and (orientation: landscape)"
+`$portrait` | "only screen and (orientation: portrait)"
+`$small-up` | "only screen"
+`$small-down` | "only screen and (max-width: 640px)"
+`$small-only` | "only screen and (max-width: 640px)"
+`$medium-up` | "only screen and (min-width: 641px)"
+`$medium-down` | "only screen and (max-width: 1024px)"
+`$medium-only` | "only screen and (min-width: 641px) and (max-width: 1024px)"
+`$large-up` | "only screen and (min-width: 1025px)"
+`$large-down` | "only screen and (max-width: 1440px)"
+`$large-only` | "only screen and (min-width: 1025px) and (max-width: 1440px)"
+`$xlarge-up` | "only screen and (min-width: 1441px)"
+`$xlarge-down` | "only screen and (max-width: 1920px)"
+`$xlarge-only` | "only screen and (min-width: 1441px) and (max-width: 1920px)"
+`$xxlarge-up` | "only screen and (min-width: 1921px)"
+`$xxlarge-down` | "only screen"
+`$xxlarge-only` | "only screen and (min-width: 1921px)"
