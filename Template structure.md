@@ -55,8 +55,8 @@
   * `page_frontpage.ease`: Template file for the frontpage (this is the first page users land on)
   * `page_newsarticle.ease`: Template file for the news article page
   * `page_newsgroup.ease`: Template file for the newsgroup page (newsarticle list)
-  * `page_newsletter_email.html`: Template file for the newsletter
   * `page_newsletter_unsubscribe_success.ease`: Template file for the newsletter successful unsubscribe landing page 
   * `page_product.ease`: Template file for the product page (single product)
   * `page_products.ease`: Template file for the products list page
 * `masterpage.ease`: The main template file, which all others are nested to. This template contains the main structure (<head>, <body,> etc...)
+* `page_newsletter_email.html`: Html template file for the newsletter
