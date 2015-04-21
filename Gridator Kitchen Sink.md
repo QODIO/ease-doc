@@ -1,19 +1,107 @@
-# Gridator
+# Gridator Kitchen Sink
 
 &nbsp;
 &nbsp;
 ## Grid
-
+![Grid](https://github.com/ingipingi/Work/blob/master/images/grid.png)
+```html
+<div class="grid centered">
+	<div class="row">
+		<div class="column small-12">
+			12
+		</div>
+	</div>
+	<div class="row">
+		<div class="column small-6">
+			6
+		</div>
+		<div class="column small-6">
+		    6
+		    <div class="grid">
+		        <div class="row">
+            		<div class="column small-6">
+            		    6
+    		        </div>
+            		<div class="column small-6">
+            		    6
+    		        </div>
+		        </div>
+		    </div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="column small-12">
+			4
+		    <div class="grid">
+		        <div class="row">
+            		<div class="column small-6">
+            		    4
+    		        </div>
+            		<div class="column small-6">
+            		    8
+    		        </div>
+		        </div>
+		    </div>
+		</div>
+		<div class="column small-12">
+			4
+		    <div class="grid">
+		        <div class="row">
+            		<div class="column small-6">
+            		    3
+    		        </div>
+            		<div class="column small-6">
+            		    9
+    		        </div>
+		        </div>
+		    </div>
+		</div>
+		<div class="column small-12">
+		    4
+		    <div class="grid">
+		        <div class="row">
+            		<div class="column small-6">
+            		    3
+    		        </div>
+            		<div class="column small-6">
+            		    3
+    		        </div>
+            		<div class="column small-6">
+            		    6
+    		        </div>
+		        </div>
+		    </div>
+		</div>
+    </div>
+</div>
+```
 
 &nbsp;
 &nbsp;
 ## Block-Grid
+![Block-Grid](https://github.com/ingipingi/Work/blob/master/images/block-grid.png)
+```html
+<ul class="small-block-grid-2 large-block-grid-4 clearfix">
+    <li>
+        <img class="expand" src="/ease/images/browser_chrome.gif">
+    </li>
+    <li>
+        <img class="expand" src="/ease/images/browser_opera.gif">
+    </li>
+    <li>
+        <img class="expand" src="/ease/images/browser_safari.gif">
+    </li>
+    <li>
+        <img class="expand" src="/ease/images/browser_firefox.gif">
+    </li>
+</ul>
+```
 
 
 &nbsp;
 &nbsp;
 ## Alert Boxes
-
+![Alert Boxes](https://github.com/ingipingi/Work/blob/master/images/alert-boxes.png)
 ```html
 <div class="alert-box radius">
     This is a standard alert (div.alert-box.radius).
@@ -33,31 +121,11 @@
 </div>
 ```
 
-&nbsp;
-&nbsp;
-## Block Grid
-
-```html
-<ul class="small-block-grid-2 large-block-grid-4 clearfix">
-    <li>
-        <img class="expand" src="/ease/images/browser_chrome.gif">
-    </li>
-    <li>
-        <img class="expand" src="/ease/images/browser_opera.gif">
-    </li>
-    <li>
-        <img class="expand" src="/ease/images/browser_safari.gif">
-    </li>
-    <li>
-        <img class="expand" src="/ease/images/browser_firefox.gif">
-    </li>
-</ul>
-```
 
 &nbsp;
 &nbsp;
 ## Breadcrumbs
-
+![Breadcrumbs](https://github.com/ingipingi/Work/blob/master/images/breadcrumbs.png)
 ```html
 <ul class="breadcrumbs">
     <li>
