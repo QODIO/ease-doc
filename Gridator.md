@@ -4,10 +4,7 @@
 &nbsp;
 ## Alert Boxes
 
-This is a standard alert (div.alert-box.radius). ×
-This is a success alert (div.alert-box.success). ×
-This is an alert (div.alert-box.alert.round). ×
-This is a secondary alert (div.alert-box.secondary). ×
+```html
 <div class="alert-box radius">
     This is a standard alert (div.alert-box.radius).
     <a href="#" class="close">×</a>
@@ -24,7 +21,11 @@ This is a secondary alert (div.alert-box.secondary). ×
     This is a secondary alert (div.alert-box.secondary).
     <a href="#" class="close">×</a>
 </div>
-Block Grid
+```
+
+&nbsp;
+&nbsp;
+## Block Grid
 
 
 <ul class="small-block-grid-2 large-block-grid-4 clearfix">
@@ -41,7 +42,11 @@ Block Grid
         <img class="expand" src="/ease/images/browser_firefox.gif">
     </li>
 </ul>
-Breadcrumbs
+
+
+&nbsp;
+&nbsp;
+## Breadcrumbs
 
 HOME  FEATURES  GENE SPLICING  CLONING
 <ul class="breadcrumbs">
@@ -58,7 +63,11 @@ HOME  FEATURES  GENE SPLICING  CLONING
         <a href="#">Cloning</a>
     </li>
 </ul>
-Buttons (and busy buttons)
+
+
+&nbsp;
+&nbsp;
+## Buttons (and busy buttons)
 
 .tiny.button
 .small.button
@@ -106,7 +115,11 @@ Buttons (and busy buttons)
         </div>
     </div>
 </div>
-Button Groups
+
+
+&nbsp;
+&nbsp;
+## Button Groups
 
 Button 1 Button 2 Button 3
 Button 1 Button 2 Button 3 Button 4
@@ -159,7 +172,11 @@ Button 1 Button 2 Button 3
         <input type="submit" class="button expand success" value="Button 3">
     </li>
 </ul>
-Dropdown Buttons
+
+
+&nbsp;
+&nbsp;
+## Dropdown Buttons
 
 Tiny Dropdown Button
 Small Secondary Radius Dropdown Button
@@ -181,7 +198,11 @@ Large Success Split Button
 <button class="small secondary radius button dropdown split">Small Secondary Radius Split Button</button><br>
 <button class="button alert round dropdown split">Round Alert Split Button</button><br>
 <button class="large success button dropdown split">Large Success Split Button</button>
-Forms
+
+
+&nbsp;
+&nbsp;
+## Forms
 
 Input Label
 
@@ -270,13 +291,21 @@ Textarea Label
         </div>
     </div>
 </form>
-Video
+
+
+&nbsp;
+&nbsp;
+## Video
 
 
 <div class="video" style="padding-top: 0; padding-bottom: 56%">
     <iframe src="//player.vimeo.com/video/93532909?title=0&amp;byline=0&amp;portrait=0&amp;color=b13438" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
-Inline Lists
+
+
+&nbsp;
+&nbsp;
+## Inline Lists
 
 Link 1
 Link 2
@@ -290,12 +319,20 @@ Link 5
     <li><a href="#">Link 4</a></li>
     <li><a href="#">Link 5</a></li>
 </ul>
-Keystroke
+
+
+&nbsp;
+&nbsp;
+## Keystroke
 
 To make something pretty, press and hold cmd + alt + shift + w + a + !
 
 To make something pretty, press and hold <kbd>cmd + alt + shift + w + a + !</kbd>
-Pagination
+
+
+&nbsp;
+&nbsp;
+## Pagination
 
 «
 1
@@ -335,7 +372,11 @@ Pagination
         <a href="">»</a>
     </li>
 </ul>
-Panels
+
+
+&nbsp;
+&nbsp;
+## Panels
 
 This is a regular panel.
 
@@ -415,7 +456,11 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, itaque.
         </div>
     </div>
 </div>
-Progress Bars
+
+
+&nbsp;
+&nbsp;
+## Progress Bars
 
 <div class="progress medium-6">
     <span class="meter" style="width: 40%"></span>
@@ -429,13 +474,21 @@ Progress Bars
 <div class="nice secondary progress">
     <span class="meter" style="width: 50%"></span>
 </div>
-Tables
+
+
+&nbsp;
+&nbsp;
+## Tables
 
 Table Header	Table Header	Table Header	Table Header
 Content Goes Here	This is longer content Donec id elit non mi porta gravida at eget metus.	Content Goes Here	Content Goes Here
 Content Goes Here	This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.	Content Goes Here	Content Goes Here
 Content Goes Here	This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.	Content Goes Here	Content Goes Here
-Types
+
+
+&nbsp;
+&nbsp;
+## Types
 
 h1. This is a very large header.
 h2. This is a large header.
@@ -496,7 +549,11 @@ List Item 1
 List Item 2
 List Item 3
 
-Blockquote
+
+
+&nbsp;
+&nbsp;
+## Blockquote
 
 I do not fear computers. I fear the lack of them. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.
 Isaac Asimov
