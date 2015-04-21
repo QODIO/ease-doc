@@ -45,15 +45,17 @@ Slideshows
 # Core methods
 ### Ease_openGraph
 ```twig
-{% Ease_openGraph(int adgroupId) %}
+{% Ease_openGraph %}
 ```
+The method `Ease_openGraph`, returns all facebooks opengraph meta tags for the sites optimization. 
 
 
 &nbsp;
 ### Ease_header
 ```twig
-{% Ease_header(int adgroupId) %}
+{% Ease_header %}
 ```
+The method `Ease_header`,  generates the Ease admin header bar, when logged in. 
 
 
 &nbsp;
@@ -62,62 +64,118 @@ Slideshows
 {% Ease_css %}
 ```
 The method `Ease_css`, returns all css link tags Ease uses. It's a helpful method to make sure all needed css files get included.
-
+```html
+<link rel="stylesheet" type="text/css" href="...">
+<link rel="stylesheet" type="text/css" href="...">
+```
 
 &nbsp;
 ### Ease_javascript
 ```twig
-{% Ease_javascript(int adgroupId) %}
+{% Ease_javascript %}
 ```
 The method `Ease_javascript`, returns all javascript link tags Ease uses. It's a helpful method to make sure all needed javascript files get included.
+```html
+<script src="...">
+<script src="...">
+```
 
 
 &nbsp;
 ### Ease_javascriptInline
 ```twig
-{% Ease_javascriptInline(int adgroupId) %}
+{% Ease_javascriptInline %}
 ```
+The method `Ease_javascriptInline`, return javascript declaration of variables. Used in head tag.
 
 
 &nbsp;
 ### Ease_masterpageContent
 ```twig
-{% Ease_masterpageContent(int adgroupId) %}
+{% Ease_masterpageContent %}
 ```
+The method `Ease_masterpageContent` is used as a placeholder for all page content in the masterpage template file.
+
 
 &nbsp;
 ### Ease_searchbox
 ```twig
-{% Ease_searchbox(int adgroupId) %}
+{% Ease_searchbox(string class = 'searchSite', string placeholderText = 'null') %}
 ```
+The method `Ease_masterpageContent` generates the Ease searchbox.<br>
+The method takes two paramterers: `class` and `placeholderText`.
+
+#### Constructor arguments
+Argument | Default value | Description
+--- | --- | ---
+class | 'searchSite' | A class to be added to the searchbox element
+placeholderText | *null* | The placeholder text for the search box
+
+#### Parameters
+Parameter | Default value | Action name | Description
+--- | --- | --- | ---
+class | 'searchSite' | `setClass` | Set the class of the searchbox
+placeholderText | '' | `setPlaceholderText` | Set the placeholderText of the searchbox
 
 
 &nbsp;
 ### Ease_menu
 ```twig
-{% Ease_menu(int adgroupId) %}
+{% Ease_menu(int menuId = 1) %}
 ```
+The method `Ease_menu` generates the an Ease menu.<br>
+The method takes one paramterer: `menuId`.
 
+#### Constructor arguments
+Argument | Default value | Description
+--- | --- | ---
+menuId | 1 | The id of the menu
 
-&nbsp;
-### Ease_pagemenuElements
-```twig
-{% Ease_pagemenuElements(int adgroupId) %}
-```
+#### Parameters and Actions
+Parameter | Default value | Action name | Description
+--- | --- | --- | ---
+menuId | 1 | `setMenuId` | Set the id of the menu
+startDepth | 1 | `setStartDepth` | Set the menu start depth of the menu.
+endDepth | *none* | `setEndDepth` | Set the menu end depth of the menu.
+class | *none* | `setClass` | Add a class to the generated menu element
+hideAdd | false | `hideAdd` | Hide/disable the Ease add menuitem button.
+menuitemId | *none* | `setMenuitemId` | Set to the id of the menuitem you want forced to be active.
+--- | --- | --- | ---
+padding | 4 | `setPadding` | Set the padding of the ease overlay on the adgroup
+ignorePadding | false | `setIgnorePadding` | Set the ease overlay to ignore the padding of the element
+buttonPosition | 'outside' | `setButtonPosition` | Set the button position of the ease overlay on the adgroup
 
 
 &nbsp;
 ### Ease_loginButton
 ```twig
-{% Ease_loginButton(int adgroupId) %}
+{% Ease_loginButton(string text = '') %}
 ```
+The method `Ease_loginButton` generates the Ease admin login button.<br>
+The method takes one paramterer: `text`.
+
+#### Constructor arguments
+Argument | Default value | Description
+--- | --- | ---
+text | '' | The text to be shown on the login button
+
+#### Parameters
+Parameter | Default value | Action name | Description
+--- | --- | --- | ---
+text | '' | `setText` | Set the text to be shown on the login button
 
 
 &nbsp;
 ### Ease_content
 ```twig
-{% Ease_content(int adgroupId) %}
+{% Ease_content %}
 ```
+The method `Ease_content` is used as a placeholder for contentitems in the page template file.
+
+#### Parameters and Actions
+Parameter | Default value | Action name | Description
+--- | --- | --- | ---
+class | '' | `setClass` | Set the class of the Ease content element
 
 
 &nbsp;
