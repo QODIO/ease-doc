@@ -146,7 +146,7 @@
 &nbsp;
 &nbsp;
 ## Buttons (and busy buttons)
-
+![Buttons](https://github.com/ingipingi/Work/blob/master/images/buttons.png)
 ```html
 <div class="grid">
     <div class="row">
@@ -183,7 +183,7 @@
 &nbsp;
 &nbsp;
 ## Button Groups
-
+![Button Groups](https://github.com/ingipingi/Work/blob/master/images/buttongroups.png)
 ```html
 <ul class="button-group split">
     <li>
@@ -237,7 +237,7 @@
 &nbsp;
 &nbsp;
 ## Dropdown Buttons
-
+![Dropdown Buttons](https://github.com/ingipingi/Work/blob/master/images/dropdown-buttons.png)
 ```html
 <button class="tiny button dropdown">Tiny Dropdown Button</button><br>
 <button class="small secondary radius button dropdown">Small Secondary Radius Dropdown Button</button><br>
@@ -249,7 +249,7 @@
 &nbsp;
 &nbsp;
 ## Split Buttons
-
+![Split Buttons](https://github.com/ingipingi/Work/blob/master/images/split-buttons.png)
 ```html
 <button class="tiny button dropdown split">Tiny Split Button</button><br>
 <button class="small secondary radius button dropdown split">Small Secondary Radius Split Button</button><br>
@@ -260,7 +260,7 @@
 &nbsp;
 &nbsp;
 ## Forms
-
+![Froms](https://github.com/ingipingi/Work/blob/master/images/forms.png)
 ```thml
 <form>
     <div class="grid">
@@ -335,7 +335,7 @@
 &nbsp;
 &nbsp;
 ## Video
-
+![Video](https://github.com/ingipingi/Work/blob/master/images/video.png)
 ```html
 <div class="video" style="padding-top: 0; padding-bottom: 56%">
     <iframe src="//player.vimeo.com/video/93532909?title=0&amp;byline=0&amp;portrait=0&amp;color=b13438" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -345,7 +345,7 @@
 &nbsp;
 &nbsp;
 ## Inline Lists
-
+![Inline Lists](https://github.com/ingipingi/Work/blob/master/images/inline-links.png)
 ```html
 <ul class="inline-list">
     <li><a href="#">Link 1</a></li>
@@ -359,9 +359,7 @@
 &nbsp;
 &nbsp;
 ## Keystroke
-
-To make something pretty, press and hold `cmd + alt + shift + w + a + !`
-
+![Keystroke](https://github.com/ingipingi/Work/blob/master/images/keystroke.png)
 ```html
 To make something pretty, press and hold <kbd>cmd + alt + shift + w + a + !</kbd>
 ```
@@ -369,9 +367,7 @@ To make something pretty, press and hold <kbd>cmd + alt + shift + w + a + !</kbd
 &nbsp;
 &nbsp;
 ## Pagination
-
-« `1` 2 3 4 … 12 13 »
-
+![Pagination](https://github.com/ingipingi/Work/blob/master/images/pagination.png)
 ```html
 <ul class="pagination">
     <li class="arrow unavailable">
@@ -407,7 +403,7 @@ To make something pretty, press and hold <kbd>cmd + alt + shift + w + a + !</kbd
 &nbsp;
 &nbsp;
 ## Panels
-
+![Panels](https://github.com/ingipingi/Work/blob/master/images/panels.png)
 ```html
 <div class="grid">
     <div class="row">
@@ -464,7 +460,7 @@ To make something pretty, press and hold <kbd>cmd + alt + shift + w + a + !</kbd
 &nbsp;
 &nbsp;
 ## Progress Bars
-
+![Progress Bars](https://github.com/ingipingi/Work/blob/master/images/progress-bars.png)
 ```html
 <div class="progress medium-6">
     <span class="meter" style="width: 40%"></span>
@@ -480,20 +476,17 @@ To make something pretty, press and hold <kbd>cmd + alt + shift + w + a + !</kbd
 </div>
 ```
 
-&nbsp;
-&nbsp;
-## Tables
-
 
 &nbsp;
 &nbsp;
-## Types
+## Type
+![Type](https://github.com/ingipingi/Work/blob/master/images/type.png)
 
 
 &nbsp;
 &nbsp;
 ## Blockquote
-
+![Blockquote](https://github.com/ingipingi/Work/blob/master/images/blockquote.png)
 ```html
 <blockquote>I do not fear computers. I fear the lack of them. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.<cite>Isaac Asimov</cite></blockquote>
 ```
