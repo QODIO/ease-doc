@@ -67,16 +67,30 @@ Sometimes other people say smart things, and you may want to mention that throug
 ## The Utilities
 
 ### Float Classes
+You can change the float behavior of an element by adding `.pull-left` or `.pull-right` to an HTML element. To clear floats, add the class `.clearfix` to the parent element.<br>
+The floats classes also have responsive equivilants. E.g. `.small-pull-right` or `.large-pull-right`.
 
 ### Radius and Rounded Classes
+The `.radius` and `.round` classes allow you to easily apply a border-radius to a UI-element. Adding the class to a button group will apply the border radius only to the outside corners.
 
 ### Text Align Classes
+You can change the text alignment of an element by adding `.text-left`, `.text-right`, `.text-center` or `.text-justify` to an element.
+The alignment classes also have responsive equivilants. E.g. `.small-text-right` or `.large-text-right`.
 
 ### Visibility Classes
+You can add the class `.hide` to an element to hide it. This will add the property *display: none;* to the element.
+You can also control the visibility of elements responsively with the following classes:
 
-### 
-
-### 
+Class | Description
+--- | ---
+`.landscape-only` | Will only show the element when landscape mode is detected
+`.portrait-only` | Will only show the element when portrait mode is detected
+`.small-only` | Will only show the element on small screens
+`.small-up` | Will show the element on small and larger screens
+`.medium-only` | Will only show the element on medium size screens
+`.medium-up` | Will show the element on medium and larger screens
+`.medium-down` | Will show the element on medium and smaller screens
+... | ...
 
 
 &nbsp;
