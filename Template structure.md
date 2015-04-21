@@ -4,7 +4,6 @@
 * `[assets]`: This folder contains all the assets (css, javascript, images, fonts, etc.)
   * `[css]`: This folder contains all the css files of the template
     * `[gridator]`: This folder contains Gridator
-      * ... (all gridator .styl files)
     * `_all.html`: This is a "kitchen sink" file with most of the CSS elements in Gridator (for testing purposes)
     * `_grid.html`: This is a testing file for the grid elements in Gridator (for testing purposes)
     * `fontface.css`: Normally used for fontfaces for embedded fonts
