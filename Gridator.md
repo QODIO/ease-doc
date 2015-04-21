@@ -27,7 +27,7 @@
 &nbsp;
 ## Block Grid
 
-
+```html
 <ul class="small-block-grid-2 large-block-grid-4 clearfix">
     <li>
         <img class="expand" src="/ease/images/browser_chrome.gif">
@@ -42,13 +42,13 @@
         <img class="expand" src="/ease/images/browser_firefox.gif">
     </li>
 </ul>
-
+```
 
 &nbsp;
 &nbsp;
 ## Breadcrumbs
 
-HOME  FEATURES  GENE SPLICING  CLONING
+```html
 <ul class="breadcrumbs">
     <li>
         <a href="#">Home</a>
@@ -63,28 +63,13 @@ HOME  FEATURES  GENE SPLICING  CLONING
         <a href="#">Cloning</a>
     </li>
 </ul>
-
+```
 
 &nbsp;
 &nbsp;
 ## Buttons (and busy buttons)
 
-.tiny.button
-.small.button
-.button
-.expand
-.tiny.secondary
-.small.success.radius
-.round.disabled
-.round:disabled
-.tiny.button.busy
-.small.button.busy
-.button.busy
-.button.expand.busy
-.tiny.button.secondary.busy
-.small.button.success.radius.busy
-.button.alert.round.disabled.busy
-.button.round.busy:disabled
+```html
 <div class="grid">
     <div class="row">
         <div class="small-12 large-6 column">
@@ -115,16 +100,13 @@ HOME  FEATURES  GENE SPLICING  CLONING
         </div>
     </div>
 </div>
-
+```
 
 &nbsp;
 &nbsp;
 ## Button Groups
 
-Button 1 Button 2 Button 3
-Button 1 Button 2 Button 3 Button 4
-Button 1 Button 2 Button 3
-  
+```html
 <ul class="button-group split">
     <li>
         <button class="small button">Button 1</button>
@@ -172,57 +154,36 @@ Button 1 Button 2 Button 3
         <input type="submit" class="button expand success" value="Button 3">
     </li>
 </ul>
-
+```
 
 &nbsp;
 &nbsp;
 ## Dropdown Buttons
 
-Tiny Dropdown Button
-Small Secondary Radius Dropdown Button
-Button Alert Round Dropdown Button
-Large Success Dropdown Button
-Large Expanded Dropdown Button
+```html
 <button class="tiny button dropdown">Tiny Dropdown Button</button><br>
 <button class="small secondary radius button dropdown">Small Secondary Radius Dropdown Button</button><br>
 <button class="button alert round dropdown">Button Alert Round Dropdown Button</button><br>
 <button class="large success button dropdown">Large Success Dropdown Button</button><br>
 <button class="large button dropdown expand">Large Expanded Dropdown Button</button>
-Split Buttons
+```
 
-Tiny Split Button
-Small Secondary Radius Split Button
-Round Alert Split Button
-Large Success Split Button
+&nbsp;
+&nbsp;
+## Split Buttons
+
+```html
 <button class="tiny button dropdown split">Tiny Split Button</button><br>
 <button class="small secondary radius button dropdown split">Small Secondary Radius Split Button</button><br>
 <button class="button alert round dropdown split">Round Alert Split Button</button><br>
 <button class="large success button dropdown split">Large Success Split Button</button>
-
+```
 
 &nbsp;
 &nbsp;
 ## Forms
 
-Input Label
-
-Input Label
-
-Input Label
-
-Input Label
-
-.com
-Input Label
-
-http://
-
-.com
-Input Label
-$
-
-Textarea Label
-
+```thml
 <form>
     <div class="grid">
         <div class="row">
@@ -291,27 +252,23 @@ Textarea Label
         </div>
     </div>
 </form>
-
+```
 
 &nbsp;
 &nbsp;
 ## Video
 
-
+```html
 <div class="video" style="padding-top: 0; padding-bottom: 56%">
     <iframe src="//player.vimeo.com/video/93532909?title=0&amp;byline=0&amp;portrait=0&amp;color=b13438" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
-
+```
 
 &nbsp;
 &nbsp;
 ## Inline Lists
 
-Link 1
-Link 2
-Link 3
-Link 4
-Link 5
+```html
 <ul class="inline-list">
     <li><a href="#">Link 1</a></li>
     <li><a href="#">Link 2</a></li>
@@ -319,30 +276,25 @@ Link 5
     <li><a href="#">Link 4</a></li>
     <li><a href="#">Link 5</a></li>
 </ul>
-
+```
 
 &nbsp;
 &nbsp;
 ## Keystroke
 
-To make something pretty, press and hold cmd + alt + shift + w + a + !
+To make something pretty, press and hold `cmd + alt + shift + w + a + !`
 
+```html
 To make something pretty, press and hold <kbd>cmd + alt + shift + w + a + !</kbd>
-
+```
 
 &nbsp;
 &nbsp;
 ## Pagination
 
-«
-1
-2
-3
-4
-…
-12
-13
-»
+« `1` 2 3 4 … 12 13 »
+
+```html
 <ul class="pagination">
     <li class="arrow unavailable">
         <a href="">«</a>
@@ -372,40 +324,13 @@ To make something pretty, press and hold <kbd>cmd + alt + shift + w + a + !</kbd
         <a href="">»</a>
     </li>
 </ul>
-
+```
 
 &nbsp;
 &nbsp;
 ## Panels
 
-This is a regular panel.
-
-It has an easy to override visual style, and is appropriately subdued.
-
-This is a radius red panel.
-
-It's a little ostentatious, but useful for important content.
-
-This is a yellow panel.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, itaque.
-
-This is a radius cyan panel.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, itaque.
-
-This is a purple panel.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, itaque.
-
-This is a radius green panel.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, itaque.
-
-This is a blue panel.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, itaque.
-
+```html
 <div class="grid">
     <div class="row">
         <div class="medium-6 column">
@@ -456,12 +381,13 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, itaque.
         </div>
     </div>
 </div>
-
+```
 
 &nbsp;
 &nbsp;
 ## Progress Bars
 
+```html
 <div class="progress medium-6">
     <span class="meter" style="width: 40%"></span>
 </div>
@@ -474,88 +400,22 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, itaque.
 <div class="nice secondary progress">
     <span class="meter" style="width: 50%"></span>
 </div>
-
+```
 
 &nbsp;
 &nbsp;
 ## Tables
-
-Table Header	Table Header	Table Header	Table Header
-Content Goes Here	This is longer content Donec id elit non mi porta gravida at eget metus.	Content Goes Here	Content Goes Here
-Content Goes Here	This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.	Content Goes Here	Content Goes Here
-Content Goes Here	This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.	Content Goes Here	Content Goes Here
 
 
 &nbsp;
 &nbsp;
 ## Types
 
-h1. This is a very large header.
-h2. This is a large header.
-
-h3. This is a medium header.
-
-h4. This is a moderate header.
-
-h5. This is a small header.
-
-h6. This is a tiny header.
-
-
-h1. This is a very large header with small.
-h2. This is a large header with small.
-
-h3. This is a medium header with small.
-
-h4. This is a moderate header with small.
-
-h5. This is a small header with small.
-
-h6. This is a tiny header with small.
-
-
-h1.subheader
-h2.subheader
-h3.subheader
-h4.subheader
-h5.subheader
-h6.subheader
-
-Some paragraphs. (starting with .lead, ending with .small)
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut commodi iste minima natus nihil nobis optio qui voluptatem! Amet cupiditate distinctio inventore ipsa, placeat porro quaerat quis quisquam saepe temporibus.
-
-Consectetur dolore, et nemo non pariatur porro rem sed voluptate? Dolorem eligendi ex, incidunt itaque laboriosam obcaecati quod repellat soluta vero? Dolorum.
-
-Alias assumenda at deleniti ducimus fugit illo illum labore maiores, molestiae odit perspiciatis placeat porro quae repudiandae rerum suscipit ullam voluptatem. Architecto?
-
-Some code
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut commodi iste minima natus nihil nobis optio qui voluptatem! Amet cupiditate distinctio inventore ipsa, placeat porro quaerat quis quisquam saepe temporibus.
-Un-ordered lists are great for making quick outlines bulleted.
-
-List item with a much longer description or more content.
-List item
-List item
-Nested List Item
-Nested List Item
-Nested List Item
-List item
-List item
-List item
-Ordered lists are great for lists that need order, duh.
-
-List Item 1
-List Item 2
-List Item 3
-
-
 
 &nbsp;
 &nbsp;
 ## Blockquote
 
-I do not fear computers. I fear the lack of them. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.
-Isaac Asimov
+```html
 <blockquote>I do not fear computers. I fear the lack of them. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.<cite>Isaac Asimov</cite></blockquote>
-
+```
