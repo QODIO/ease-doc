@@ -1,5 +1,10 @@
 # Gettings started with Gridator
 
+* [The Core](#the-core)
+* [The Elements](#the-elements)
+* [The Utilities](#the-utilities)
+* [The Functions](#the-functions)
+
 &nbsp;
 &nbsp;
 ## The Core
