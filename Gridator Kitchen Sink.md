@@ -2,20 +2,20 @@
 
 #### Elements
 * [Grid](#grid)
-* [Block Grid](#block_grid)
-* [Alert Boxes](#alert_boxes)
+* [Block Grid](#block-grid)
+* [Alert Boxes](#alert-boxes)
 * [Breadcrumbs](#breadcrumbs)
 * [Buttons](#buttons)
 * [Buttongroups](#buttongroups)
-* [Dropdown Buttons](#dropdown_buttons)
-* [Split Buttons](#split_buttons)
+* [Dropdown Buttons](#dropdown-buttons)
+* [Split Buttons](#split-buttons)
 * [Forms](#forms)
 * [Video](#video)
-* [Inline Lists](#inline_lists)
+* [Inline Lists](#inline-lists)
 * [Keystroke](#keytroke)
 * [Pagination](#pagination)
 * [Panels](#panels)
-* [Progress Bars](#progressbars)
+* [Progressbars](#progressbars)
 * [Type](#type)
 * [Blockquote](#blockquote)
 
@@ -97,8 +97,8 @@
 
 &nbsp;
 &nbsp;
-## Block-Grid
-![Block-Grid](https://github.com/ingipingi/Work/blob/master/images/block-grid.png)
+## Block Grid
+![Block Grid](https://github.com/ingipingi/Work/blob/master/images/block-grid.png)
 ```html
 <ul class="small-block-grid-2 large-block-grid-4 clearfix">
     <li>
