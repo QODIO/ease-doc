@@ -220,6 +220,7 @@ xxlarge-range-lower = 1921px
 
 ##### These are the available media sizes you can use
 Query variable | CSS equivelant
+--- | ---
 `$screen` | "only screen"
 `$landscape` | "only screen and (orientation: landscape)"
 `$portrait` | "only screen and (orientation: portrait)"
