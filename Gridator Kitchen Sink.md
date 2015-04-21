@@ -16,63 +16,63 @@
 			6
 		</div>
 		<div class="column small-6">
-		    6
-		    <div class="grid">
-		        <div class="row">
-            		<div class="column small-6">
-            		    6
-    		        </div>
-            		<div class="column small-6">
-            		    6
-    		        </div>
-		        </div>
-		    </div>
+			6
+			<div class="grid">
+				<div class="row">
+					<div class="column small-6">
+						6
+					</div>
+					<div class="column small-6">
+						6
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="row">
 		<div class="column small-12">
 			4
-		    <div class="grid">
-		        <div class="row">
-            		<div class="column small-6">
-            		    4
-    		        </div>
-            		<div class="column small-6">
-            		    8
-    		        </div>
-		        </div>
-		    </div>
+			<div class="grid">
+				<div class="row">
+					<div class="column small-6">
+						4
+					</div>
+					<div class="column small-6">
+						8
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="column small-12">
 			4
-		    <div class="grid">
-		        <div class="row">
-            		<div class="column small-6">
-            		    3
-    		        </div>
-            		<div class="column small-6">
-            		    9
-    		        </div>
-		        </div>
-		    </div>
+			<div class="grid">
+				<div class="row">
+					<div class="column small-6">
+						3
+					</div>
+					<div class="column small-6">
+						9
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="column small-12">
-		    4
-		    <div class="grid">
-		        <div class="row">
-            		<div class="column small-6">
-            		    3
-    		        </div>
-            		<div class="column small-6">
-            		    3
-    		        </div>
-            		<div class="column small-6">
-            		    6
-    		        </div>
-		        </div>
-		    </div>
+			4
+			<div class="grid">
+				<div class="row">
+					<div class="column small-6">
+						3
+					</div>
+					<div class="column small-6">
+						3
+					</div>
+					<div class="column small-6">
+						6
+					</div>
+				</div>
+			</div>
 		</div>
-    </div>
+	</div>
 </div>
 ```
 
