@@ -4,7 +4,9 @@
 
 # Gettings started
 
-### What Comes With Gridator?
+&nbsp;
+&nbsp;
+## What Comes With Gridator?
 
 #### The Grid
 Our grid works on almost any device and has support for nesting, source ordering, offsets and device presentation.
