@@ -11,14 +11,14 @@
 ## The Core
 
 ### Grid
-Create powerful multi-device layouts quickly and easily with the default 12-column, nest-able Gridator grid. If you're familiar with grid systems, you'll feel right at home. If not, you'll learn quickly.
-See an [example](https://github.com/ingipingi/Work/blob/master/Gridator%20Kitchen%20Sink.md#grid).
+Create powerful multi-device layouts quickly and easily with the default 12-column, nest-able Gridator grid. If you're familiar with grid systems, you'll feel right at home. If not, you'll learn quickly.<br>
+See an [example](Gridator%20Kitchen%20Sink.md#grid).
 
 
 &nbsp;
 ### Block Grid
 Block grids give you a way to evenly split contents of a list within the grid. If you wanted to create a row of five images or paragraphs that need to stay evenly spaced no matter the screen size, the block grid is for you.<br>
-See an [example](https://github.com/ingipingi/Work/blob/master/Gridator%20Kitchen%20Sink.md#block-grid).
+See an [example](Gridator%20Kitchen%20Sink.md#block-grid).
 
 
 &nbsp;
