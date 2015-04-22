@@ -257,13 +257,15 @@ height: 200px;
 
 &nbsp;
 ### border
-Adds the ability to easily set a simple border. E.g.:
+Extends the functionality of border to have some default values if not expressed. E.g.:
 ```stylus
 border red
+border 5px blue
 ```
 Is the same as writing:
 ```css
 border: 1px solid red;
+border: 5px solid blue;
 ```
 
 
