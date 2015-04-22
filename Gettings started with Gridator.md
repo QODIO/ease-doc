@@ -100,11 +100,11 @@ Class | Description
 
 ### blend_colors
 Used to blend two colors together
-#### Definition:
+##### Definition:
 ```stylus
 blend_colors(source_color, percent = 50%, blend_width = #ccc)
 ```
-#### Example:
+##### Example:
 ```stylus
 blend_colors(#f00, 50%, #00f)
 /* Should return approx. #808 */
@@ -117,11 +117,11 @@ Returns clearfix to the class
 &nbsp;
 ### is_dark
 Check if a color is dark by passing a color as the first argument, return second argument if true, third argument if not.
-#### Definition:
+##### Definition:
 ```stylus
 is_dark(color, then_color = #fff, else_color = #000)
 ```
-#### Example:
+##### Example:
 ```stylus
 is_dark(#333, #f00, #00f)
 /* Returns #f00 */
@@ -130,11 +130,11 @@ is_dark(#333, #f00, #00f)
 &nbsp;
 ### is_light
 Check if a color is light by passing a color as the first argument, return second argument if true, third argument if not.
-#### Definition:
+##### Definition:
 ```stylus
 is_light(color, then_color = #fff, else_color = #000)
 ```
-#### Example:
+##### Example:
 ```stylus
 is_light(#333, #f00, #00f)
 /* Returns #00f */
@@ -186,11 +186,11 @@ top: 5px;
 &nbsp;
 ### size
 Set the size of an element. If only first parameter is given, then both width and height will be set to that.
-#### Definition:
+##### Definition:
 ```stylus
 size(width[, height])
 ```
-#### Example:
+##### Example:
 ```stylus
 size(300px, 200px)
 ```
@@ -216,7 +216,7 @@ border: 3px solid #f00;
 &nbsp;
 ## The Media Queries
 
-#### Theese are the ranges the media queries use:
+##### Theese are the ranges the media queries use:
 * small-range-lower 	= 0px
 * small-range-upper 	= 640px
 * medium-range-lower 	= 641px
@@ -227,7 +227,7 @@ border: 3px solid #f00;
 * xlarge-range-upper 	= 1920px
 * xxlarge-range-lower = 1921px
 
-#### These are the available media sizes you can use
+##### These are the available media sizes you can use
 Query variable | CSS equivelant
 --- | ---
 `$screen` | "only screen"
@@ -249,7 +249,7 @@ Query variable | CSS equivelant
 `$xxlarge-down` | "only screen"
 `$xxlarge-only` | "only screen and (min-width: 1921px)"
 
-#### Examples:
+##### Examples:
 if you want to the included classes to only be used at specefik size:
 ```stylus
 @media $large-down
