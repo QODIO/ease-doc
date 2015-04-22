@@ -152,6 +152,12 @@ background-color blend_colors(#f00, 50%, #00f)
 &nbsp;
 ### clearfix
 Returns clearfix to the class
+##### Example:
+```stylus
+.awesome_div
+  background-color #000
+  clearfix()
+```
 
 &nbsp;
 ### is_dark
