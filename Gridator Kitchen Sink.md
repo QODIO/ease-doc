@@ -171,7 +171,6 @@
 <button class="small button">.small.button</button><br>
 <button class="button">.button</button><br>
 <button class="button expand">.expand</button><br>
-
 <button class="tiny button secondary">.tiny.secondary</button><br>
 <button class="small button success radius">.small.success.radius</button><br>
 <button class="button alert round disabled">.round.disabled</button><br>
@@ -181,7 +180,6 @@
 <button class="small button busy">.small.button.busy</button><br>
 <button class="button busy">.button.busy</button><br>
 <button class="button expand busy">.button.expand.busy</button><br>
-
 <button class="tiny button secondary busy">.tiny.button.secondary.busy</button><br>
 <button class="small button success radius busy">.small.button.success.radius.busy</button><br>
 <button class="button alert round disabled busy">.button.alert.round.disabled.busy</button><br>
