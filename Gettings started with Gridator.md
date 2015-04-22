@@ -191,12 +191,12 @@ Adds ellipsis support for overflow
 ##### Example:
 ```stylus
 overflow ellipsis
-/*
+```
 Is the same as writing:
+```css
 text-overflow: ellipsis;
 overflow: hidden;
 white-space: nowrap;
-*/
 ```
 
 &nbsp;
