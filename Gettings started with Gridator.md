@@ -146,7 +146,7 @@ blend_colors(source_color, percent = 50%, blend_width = #ccc)
 ##### Example:
 ```stylus
 background-color blend_colors(#f00, 50%, #00f)
-/* Should return approx. background-color: #808; */
+/* Returns: background-color: #800080; */
 ```
 
 &nbsp;
@@ -194,16 +194,16 @@ overflow ellipsis
 ```
 Is the same as writing:
 ```css
-text-overflow: ellipsis;
-overflow: hidden;
 white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
 ```
 
 &nbsp;
 ### fixed
 Shorthand for setting up a fixed element
 ```stylus
-fixed('left 10px top 5px')
+fixed left 10px top 5px
 ```
 Is the same as writing:
 ```css
@@ -216,7 +216,7 @@ top: 5px;
 ### absolute
 Shorthand for setting up a absolute element
 ```stylus
-absolute('left 10px top 5px')
+absolute left 10px top 5px
 ```
 Is the same as writing:
 ```css
@@ -229,7 +229,7 @@ top: 5px;
 ### relative
 Shorthand for setting up a relative element
 ```stylus
-relative('left 10px top 5px')
+relative left 10px top 5px
 ```
 Is the same as writing:
 ```css
@@ -243,11 +243,11 @@ top: 5px;
 Set the size of an element. If only first parameter is given, then both width and height will be set to that.
 ##### Definition:
 ```stylus
-size(width[, height])
+size width [height]
 ```
 ##### Example:
 ```stylus
-size(300px, 200px)
+size 300px 200px
 ```
 Is the same as writing:
 ```css
@@ -257,13 +257,13 @@ height: 200px;
 
 &nbsp;
 ### border
-Adds the ability to omit border style when setting border. E.g.:
+Adds the ability to easily set a simple border. E.g.:
 ```stylus
-border 3px #f00
+border red
 ```
 Is the same as writing:
 ```css
-border: 3px solid #f00;
+border: 1px solid red;
 ```
 
 
