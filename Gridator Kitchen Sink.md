@@ -167,36 +167,25 @@
 ## Buttons (and busy buttons)
 ![Buttons](https://github.com/ingipingi/Work/blob/master/images/buttons.png)
 ```html
-<div class="grid">
-    <div class="row">
-        <div class="small-12 large-6 column">
-            <button class="tiny button">.tiny.button</button><br>
-            <button class="small button">.small.button</button><br>
-            <button class="button">.button</button><br>
-            <button class="button expand">.expand</button><br>
-        </div>
-        <div class="small-12 large-6 column">
-            <button class="tiny button secondary">.tiny.secondary</button><br>
-            <button class="small button success radius">.small.success.radius</button><br>
-            <button class="button alert round disabled">.round.disabled</button><br>
-            <button class="button alert round" disabled>.round:disabled</button><br>
-        </div>
-    </div>
-    <div class="row">
-        <div class="small-12 large-6 column">
-            <button class="tiny button busy">.tiny.button.busy</button><br>
-            <button class="small button busy">.small.button.busy</button><br>
-            <button class="button busy">.button.busy</button><br>
-            <button class="button expand busy">.button.expand.busy</button><br>
-        </div>
-        <div class="small-12 large-6 column">
-            <button class="tiny button secondary busy">.tiny.button.secondary.busy</button><br>
-            <button class="small button success radius busy">.small.button.success.radius.busy</button><br>
-            <button class="button alert round disabled busy">.button.alert.round.disabled.busy</button><br>
-            <button class="button alert round busy" disabled>.button.round.busy:disabled</button><br>
-        </div>
-    </div>
-</div>
+<button class="tiny button">.tiny.button</button><br>
+<button class="small button">.small.button</button><br>
+<button class="button">.button</button><br>
+<button class="button expand">.expand</button><br>
+
+<button class="tiny button secondary">.tiny.secondary</button><br>
+<button class="small button success radius">.small.success.radius</button><br>
+<button class="button alert round disabled">.round.disabled</button><br>
+<button class="button alert round" disabled>.round:disabled</button><br>
+
+<button class="tiny button busy">.tiny.button.busy</button><br>
+<button class="small button busy">.small.button.busy</button><br>
+<button class="button busy">.button.busy</button><br>
+<button class="button expand busy">.button.expand.busy</button><br>
+
+<button class="tiny button secondary busy">.tiny.button.secondary.busy</button><br>
+<button class="small button success radius busy">.small.button.success.radius.busy</button><br>
+<button class="button alert round disabled busy">.button.alert.round.disabled.busy</button><br>
+<button class="button alert round busy" disabled>.button.round.busy:disabled</button><br>
 ```
 
 &nbsp;
@@ -280,75 +269,73 @@
 &nbsp;
 ## Forms
 ![Froms](https://github.com/ingipingi/Work/blob/master/images/forms.png)
-```thml
-<form>
-    <div class="grid">
-        <div class="row">
-            <div class="small-12 column">
-                <label>Input Label</label>
-                <input type="text" placeholder="small-12.column">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="small-12 medium-4 column">
-                <label>Input Label</label>
-                <input type="text" placeholder="small-12.medium-4.column">
-            </div>
-            <div class="small-12 medium-4 column">
-                <label>Input Label</label>
-                <input type="text" placeholder="small-12.medium-4.column" disabled value="disabled content">
-            </div>
-            <div class="small-12 medium-4 column">
-                <label>Input Label</label>
-                <ul class="input-group round">
-                    <li class="small-9">
-                        <input type="text" placeholder="li.small-9">
-                    </li>
-                    <li class="small-3">
-                        <span class="postfix">.com</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="large-6 column">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.column">
-                <ul class="input-group round">
-                    <li class="small-2">
-                        <span class="prefix">http://</span>
-                    </li>
-                    <li class="small-8">
-                        <input type="text" placeholder="small-9.column">
-                    </li>
-                    <li class="small-2">
-                        <span class="postfix">.com</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="large-6 column">
-                <label>Input Label</label>
-                <ul class="input-group round">
-                    <li class="small-1">
-                        <span class="prefix">$</span>
-                    </li>
-                    <li class="small-11">
-                        <input type="text" placeholder="small-9.column">
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="small-12 column">
-                <label>Textarea Label</label>
-                <textarea placeholder="small-12.column"></textarea>
-            </div>
-        </div>
-    </div>
-</form>
+```html
+<div class="grid">
+	<div class="row">
+		<div class="small-12 column">
+			<label>Input Label</label>
+			<input type="text" placeholder="small-12.column">
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="small-12 medium-4 column">
+			<label>Input Label</label>
+			<input type="text" placeholder="small-12.medium-4.column">
+		</div>
+		<div class="small-12 medium-4 column">
+			<label>Input Label</label>
+			<input type="text" placeholder="small-12.medium-4.column" disabled value="disabled content">
+		</div>
+		<div class="small-12 medium-4 column">
+			<label>Input Label</label>
+			<ul class="input-group round">
+				<li class="small-9">
+					<input type="text" placeholder="li.small-9">
+				</li>
+				<li class="small-3">
+					<span class="postfix">.com</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="large-6 column">
+			<label>Input Label</label>
+			<input type="text" placeholder="large-4.column">
+			<ul class="input-group round">
+				<li class="small-2">
+					<span class="prefix">http://</span>
+				</li>
+				<li class="small-8">
+					<input type="text" placeholder="small-9.column">
+				</li>
+				<li class="small-2">
+					<span class="postfix">.com</span>
+				</li>
+			</ul>
+		</div>
+		<div class="large-6 column">
+			<label>Input Label</label>
+			<ul class="input-group round">
+				<li class="small-1">
+					<span class="prefix">$</span>
+				</li>
+				<li class="small-11">
+					<input type="text" placeholder="small-9.column">
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="small-12 column">
+			<label>Textarea Label</label>
+			<textarea placeholder="small-12.column"></textarea>
+		</div>
+	</div>
+</div>
 ```
 
 &nbsp;
