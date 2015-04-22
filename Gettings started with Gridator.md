@@ -101,7 +101,35 @@ Class | Description
 `.medium-only` | Will only show the element on medium size screens
 `.medium-up` | Will show the element on medium and larger screens
 `.medium-down` | Will show the element on medium and smaller screens
-... | ...
+`.large-only` | Will only show the element on large size screens
+`.large-up` | Will show the element on large and larger screens
+`.large-down` | Will show the element on large and smaller screens
+`.xlarge-only` | Will only show the element on xlarge size screens
+`.xlarge-up` | Will show the element on xlarge and larger screens
+`.xlarge-down` | Will show the element on xlarge and smaller screens
+`.xxlarge-only` | Will only show the element on xxlarge size screens
+`.xxlarge-up` | Will show the element on xxlarge and larger screens
+`.xxlarge-down` | Will show the element on xxlarge and smaller screens
+
+For good measure, you also have the ability to hide elementsbased on the size of the screen
+Class | Description
+--- | ---
+`.landscape-hide` | Will only hide the element when landscape mode is detected
+`.portrait-hide` | Will only hide the element when portrait mode is detected
+`.small-only-hide` | Will only hide the element on small screens
+`.small-up-hide` | Will hide the element on small and larger screens
+`.medium-only-hide` | Will only hide the element on medium size screens
+`.medium-up-hide` | Will hide the element on medium and larger screens
+`.medium-down-hide` | Will hide the element on medium and smaller screens
+`.large-only-hide` | Will only hide the element on large size screens
+`.large-up-hide` | Will hide the element on large and larger screens
+`.large-down-hide` | Will hide the element on large and smaller screens
+`.xlarge-only-hide` | Will only hide the element on xlarge size screens
+`.xlarge-up-hide` | Will hide the element on xlarge and larger screens
+`.xlarge-down-hide` | Will hide the element on xlarge and smaller screens
+`.xxlarge-only-hide` | Will only hide the element on xxlarge size screens
+`.xxlarge-up-hide` | Will hide the element on xxlarge and larger screens
+`.xxlarge-down-hide` | Will hide the element on xxlarge and smaller screens
 
 
 &nbsp;
