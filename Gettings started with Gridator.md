@@ -145,8 +145,8 @@ blend_colors(source_color, percent = 50%, blend_width = #ccc)
 ```
 ##### Example:
 ```stylus
-blend_colors(#f00, 50%, #00f)
-/* Should return approx. #808 */
+background-color blend_colors(#f00, 50%, #00f)
+/* Should return approx. background-color: #808; */
 ```
 
 &nbsp;
