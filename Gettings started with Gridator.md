@@ -112,6 +112,7 @@ Class | Description
 `.xxlarge-down` | Will show the element on xxlarge and smaller screens
 
 For good measure, you also have the ability to hide elementsbased on the size of the screen
+
 Class | Description
 --- | ---
 `.landscape-hide` | Will only hide the element when landscape mode is detected
