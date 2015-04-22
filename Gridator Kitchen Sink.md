@@ -22,7 +22,7 @@
 &nbsp;
 &nbsp;
 ## Grid
-![Grid](https://github.com/ingipingi/Work/blob/master/images/grid.png)
+![Grid](images/grid.png)
 ```html
 <div class="grid centered">
 	<div class="row">
@@ -98,7 +98,7 @@
 &nbsp;
 &nbsp;
 ## Block Grid
-![Block Grid](https://github.com/ingipingi/Work/blob/master/images/block-grid.png)
+![Block Grid](images/block-grid.png)
 ```html
 <ul class="small-block-grid-2 large-block-grid-4 clearfix">
     <li>
@@ -120,7 +120,7 @@
 &nbsp;
 &nbsp;
 ## Alert Boxes
-![Alert Boxes](https://github.com/ingipingi/Work/blob/master/images/alert-boxes.png)
+![Alert Boxes](images/alert-boxes.png)
 ```html
 <div class="alert-box radius">
     This is a standard alert (div.alert-box.radius).
@@ -144,7 +144,7 @@
 &nbsp;
 &nbsp;
 ## Breadcrumbs
-![Breadcrumbs](https://github.com/ingipingi/Work/blob/master/images/breadcrumbs.png)
+![Breadcrumbs](images/breadcrumbs.png)
 ```html
 <ul class="breadcrumbs">
     <li>
@@ -165,7 +165,7 @@
 &nbsp;
 &nbsp;
 ## Buttons (and busy buttons)
-![Buttons](https://github.com/ingipingi/Work/blob/master/images/buttons.png)
+![Buttons](images/buttons.png)
 ```html
 <button class="tiny button">.tiny.button</button><br>
 <button class="small button">.small.button</button><br>
@@ -189,7 +189,7 @@
 &nbsp;
 &nbsp;
 ## Button Groups
-![Button Groups](https://github.com/ingipingi/Work/blob/master/images/buttongroups.png)
+![Button Groups](images/buttongroups.png)
 ```html
 <ul class="button-group split">
     <li>
@@ -243,7 +243,7 @@
 &nbsp;
 &nbsp;
 ## Dropdown Buttons
-![Dropdown Buttons](https://github.com/ingipingi/Work/blob/master/images/dropdown-buttons.png)
+![Dropdown Buttons](images/dropdown-buttons.png)
 ```html
 <button class="tiny button dropdown">Tiny Dropdown Button</button><br>
 <button class="small secondary radius button dropdown">Small Secondary Radius Dropdown Button</button><br>
@@ -255,7 +255,7 @@
 &nbsp;
 &nbsp;
 ## Split Buttons
-![Split Buttons](https://github.com/ingipingi/Work/blob/master/images/split-buttons.png)
+![Split Buttons](images/split-buttons.png)
 ```html
 <button class="tiny button dropdown split">Tiny Split Button</button><br>
 <button class="small secondary radius button dropdown split">Small Secondary Radius Split Button</button><br>
@@ -266,7 +266,7 @@
 &nbsp;
 &nbsp;
 ## Forms
-![Froms](https://github.com/ingipingi/Work/blob/master/images/forms.png)
+![Froms](images/forms.png)
 ```html
 <div class="grid">
 	<div class="row">
@@ -339,7 +339,7 @@
 &nbsp;
 &nbsp;
 ## Video
-![Video](https://github.com/ingipingi/Work/blob/master/images/video.png)
+![Video](images/video.png)
 ```html
 <div class="video" style="padding-top: 0; padding-bottom: 56%">
     <iframe src="//player.vimeo.com/video/93532909?title=0&amp;byline=0&amp;portrait=0&amp;color=b13438" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -349,7 +349,7 @@
 &nbsp;
 &nbsp;
 ## Inline Lists
-![Inline Lists](https://github.com/ingipingi/Work/blob/master/images/inline-links.png)
+![Inline Lists](images/inline-links.png)
 ```html
 <ul class="inline-list">
     <li><a href="#">Link 1</a></li>
@@ -363,7 +363,7 @@
 &nbsp;
 &nbsp;
 ## Keystroke
-![Keystroke](https://github.com/ingipingi/Work/blob/master/images/keystroke.png)
+![Keystroke](images/keystroke.png)
 ```html
 To make something pretty, press and hold <kbd>cmd + alt + shift + w + a + !</kbd>
 ```
@@ -371,7 +371,7 @@ To make something pretty, press and hold <kbd>cmd + alt + shift + w + a + !</kbd
 &nbsp;
 &nbsp;
 ## Pagination
-![Pagination](https://github.com/ingipingi/Work/blob/master/images/pagination.png)
+![Pagination](images/pagination.png)
 ```html
 <ul class="pagination">
     <li class="arrow unavailable">
@@ -407,7 +407,7 @@ To make something pretty, press and hold <kbd>cmd + alt + shift + w + a + !</kbd
 &nbsp;
 &nbsp;
 ## Panels
-![Panels](https://github.com/ingipingi/Work/blob/master/images/panels.png)
+![Panels](images/panels.png)
 ```html
 <div class="grid">
     <div class="row">
@@ -464,7 +464,7 @@ To make something pretty, press and hold <kbd>cmd + alt + shift + w + a + !</kbd
 &nbsp;
 &nbsp;
 ## Progressbars
-![Progress Bars](https://github.com/ingipingi/Work/blob/master/images/progress-bars.png)
+![Progress Bars](images/progress-bars.png)
 ```html
 <div class="progress medium-6">
     <span class="meter" style="width: 40%"></span>
@@ -484,13 +484,13 @@ To make something pretty, press and hold <kbd>cmd + alt + shift + w + a + !</kbd
 &nbsp;
 &nbsp;
 ## Type
-![Type](https://github.com/ingipingi/Work/blob/master/images/type.png)
+![Type](images/type.png)
 
 
 &nbsp;
 &nbsp;
 ## Blockquote
-![Blockquote](https://github.com/ingipingi/Work/blob/master/images/blockquote.png)
+![Blockquote](images/blockquote.png)
 ```html
 <blockquote>I do not fear computers. I fear the lack of them. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.<cite>Isaac Asimov</cite></blockquote>
 ```
