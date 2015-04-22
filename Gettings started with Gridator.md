@@ -188,6 +188,16 @@ is_light(#333, #f00, #00f)
 &nbsp;
 ### overflow
 Adds ellipsis support for overflow
+##### Example:
+```stylus
+overflow ellipsis
+/*
+Is the same as writing:
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+*/
+```
 
 &nbsp;
 ### fixed
